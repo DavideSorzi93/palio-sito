@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Albo d'oro - Palio</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <style>
+    /* Stili locali per la pagina Albo d'oro */
+    .albo-section { margin: 2rem 0; }
+    .albo-controls { margin-bottom: 1rem; }
+    table.albo-table { width: 100%; border-collapse: collapse; }
+    table.albo-table th, table.albo-table td { padding: .5rem; border: 1px solid #ddd; text-align: left; }
+    .small-note { color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><h1>Palio</h1></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">Chi Siamo</a></li>
+        <li><a href="services.html">Servizi</a></li>
+        <li><a href="albo.html" aria-current="page">Albo d'oro</a></li>
+        <li><a href="contact.html">Contatti</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Albo d'oro</h1>
+    <p>Consulta i vincitori e i risultati per anno delle nostre competizioni. (Dati di esempio)</p>
+
+    <section id="corsa-asini" class="albo-section">
+      <h2>Corsa degli asini</h2>
+      <div class="albo-controls">
+        <label for="year-corsa">Anno:
+          <select id="year-corsa"></select>
+        </label>
+      </div>
+      <table class="albo-table" id="table-corsa">
+        <thead><tr><th>Posizione</th><th>Contrada / Partecipante</th><th>Tempo / Note</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="small-note">Esempio: i tempi sono indicativi.</p>
+    </section>
+
+    <section id="canzoniere" class="albo-section">
+      <h2>Canzoniere</h2>
+      <div class="albo-controls">
+        <label for="year-canzoniere">Anno:
+          <select id="year-canzoniere"></select>
+        </label>
+      </div>
+      <table class="albo-table" id="table-canzoniere">
+        <thead><tr><th>Posizione</th><th>Gruppo</th><th>Voto / Note</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="torneo-calcetto" class="albo-section">
+      <h2>Torneo calcetto</h2>
+      <div class="albo-controls">
+        <label for="year-torneo">Anno:
+          <select id="year-torneo"></select>
+        </label>
+      </div>
+      <table class="albo-table" id="table-torneo">
+        <thead><tr><th>Posizione</th><th>Squadra</th><th>Risultato / Note</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container"><p>&copy; 2026 Palio. Tutti i diritti riservati.</p></div>
+  </footer>
+
+  <script>
+    // Dati di esempio per l'Albo d'oro
+    const ALBO_DATA = {
+      "Corsa degli asini": {
+        "2026": [
+          {pos:1,name:"Contrada del Sole",note:"02:34"},
+          {pos:2,name:"Contrada della Luna",note:"02:47"},
+          {pos:3,name:"Contrada del Ponte",note:"03:05"}
+        ],
+        "2025": [
+          {pos:1,name:"Contrada della Luna",note:"02:40"},
+          {pos:2,name:"Contrada del Vento",note:"02:55"},
+          {pos:3,name:"Contrada del Sole",note:"03:10"}
+        ],
+        "2024": [
+          {pos:1,name:"Contrada del Ponte",note:"02:50"},
+          {pos:2,name:"Contrada del Vento",note:"03:00"}
+        ]
+      },
+      "Canzoniere": {
+        "2026": [
+          {pos:1,name:"Gruppo Armonia",note:"95/100 - Menzione speciale"},
+          {pos:2,name:"Coro Alpino",note:"90/100"},
+          {pos:3,name:"Voci Nuove",note:"88/100"}
+        ],
+        "2025": [
+          {pos:1,name:"Voci Nuove",note:"92/100"},
+          {pos:2,name:"Gruppo Armonia",note:"89/100"}
+        ],
+        "2024": [
+          {pos:1,name:"Coro Alpino",note:"90/100"}
+        ]
+      },
+      "Torneo calcetto": {
+        "2026": [
+          {pos:1,name:"FC Palio",note:"Finale 3-1"},
+          {pos:2,name:"Real Contrada",note:""},
+          {pos:3,name:"I Briganti",note:"Vinto semifinale ai rigori"},
+          {pos:4,name:"Le Aquile",note:""}
+        ],
+        "2025": [
+          {pos:1,name:"Real Contrada",note:"Finale 2-0"},
+          {pos:2,name:"FC Palio",note:""}
+        ],
+        "2024": [
+          {pos:1,name:"I Briganti",note:""}
+        ]
+      }
+    };
+
+    function populateYears(eventKey, selectId, tableId) {
+      const select = document.getElementById(selectId);
+      const tableBody = document.querySelector(`#${tableId} tbody`);
+      select.innerHTML = '';
+      const years = Object.keys(ALBO_DATA[eventKey] || {}).sort((a,b)=>b-a);
+      if (years.length === 0) {
+        select.innerHTML = '<option>—</option>';
+        tableBody.innerHTML = '<tr><td colspan="3">Nessun dato disponibile</td></tr>';
+        return;
+      }
+      years.forEach((y)=> {
+        const opt = document.createElement('option');
+        opt.value = y; opt.textContent = y;
+        select.appendChild(opt);
+      });
+      select.addEventListener('change', ()=> renderTable(eventKey, select.value, tableId));
+      renderTable(eventKey, select.value, tableId);
+    }
+
+    function renderTable(eventKey, year, tableId) {
+      const rows = (ALBO_DATA[eventKey] && ALBO_DATA[eventKey][year]) || [];
+      const tbody = document.querySelector(`#${tableId} tbody`);
+      if (!rows.length) {
+        tbody.innerHTML = '<tr><td colspan="3">Nessun dato per questo anno</td></tr>';
+        return;
+      }
+      tbody.innerHTML = rows.map(r=>`<tr><td>${r.pos}</td><td>${escapeHtml(r.name)}</td><td>${escapeHtml(r.note || '')}</td></tr>`).join('');
+    }
+
+    // Semplice funzione di escape per sicurezza
+    function escapeHtml(str){
+      return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    // inizializza le tre sezioni
+    populateYears("Corsa degli asini","year-corsa","table-corsa");
+    populateYears("Canzoniere","year-canzoniere","table-canzoniere");
+    populateYears("Torneo calcetto","year-torneo","table-torneo");
+  </script>
+</body>
+</html>
