@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canzoniere - Albo d'oro</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><h1>Palio</h1></div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="albo.html">Albo d'oro</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Canzoniere — Albo d'oro</h1>
+    <p class="text-muted">Risultati storici del Canzoniere (dati di esempio caricati da data/canzoniere.json)</p>
+
+    <div class="albo-controls">
+      <label for="year-select">Anno:
+        <select id="year-select"></select>
+      </label>
+      <label for="search-input">Cerca:
+        <input id="search-input" type="search" placeholder="Cerca per gruppo o note" />
+      </label>
+      <button id="export-csv" class="btn">Esporta CSV</button>
+      <button id="print-btn" class="btn">Stampa</button>
+      <button id="open-admin" class="btn btn-secondary">Admin (sessione)</button>
+    </div>
+
+    <div class="table-wrap">
+      <table class="albo-table" id="albo-table">
+        <thead><tr><th>Posizione</th><th>Gruppo</th><th>Note</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <section id="admin-panel" class="albo-section" style="display:none;margin-top:1rem;">
+      <h2>Admin (modifica in sessione)</h2>
+      <form id="admin-form">
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+          <label>Posizione: <input type="number" id="admin-pos" required min="1" /></label>
+          <label>Nome: <input type="text" id="admin-name" required /></label>
+          <label>Note: <input type="text" id="admin-note" /></label>
+          <button class="btn" type="submit">Aggiungi</button>
+          <button id="download-json" class="btn" type="button">Scarica JSON aggiornato</button>
+        </div>
+      </form>
+    </section>
+
+    <p class="text-muted"><a href="albo.html">Torna all'Albo d'oro</a></p>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><p>&copy; 2026 Palio. Tutti i diritti riservati.</p></div>
+  </footer>
+
+  <script src="../js/albo.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=> initEventPage('Canzoniere'));
+  </script>
+</body>
+</html>
