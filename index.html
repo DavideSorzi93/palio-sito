@@ -8,12 +8,19 @@
 </head>
 <body>
     <!-- Navigazione -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Navigazione principale">
         <div class="container">
             <div class="logo">
+                <img src="assets/stemma.png" alt="Stemma del Palio" class="logo-stemma" />
                 <h1>Palio</h1>
             </div>
-            <ul class="nav-links">
+
+            <!-- hamburger toggle per mobile -->
+            <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Apri menu">
+              <span class="bar" aria-hidden="true"></span>
+            </button>
+
+            <ul id="main-nav" class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pages/about.html">Chi Siamo</a></li>
                 <li><a href="pages/services.html">Servizi</a></li>
@@ -72,5 +79,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/menu-hamburger.js"></script>
 </body>
 </html>
