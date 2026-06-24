@@ -1,0 +1,14 @@
+{
+  "2026": [
+    { "pos": 1, "name": "Gruppo Armonia", "note": "95/100 - Menzione speciale" },
+    { "pos": 2, "name": "Coro Alpino", "note": "90/100" },
+    { "pos": 3, "name": "Voci Nuove", "note": "88/100" }
+  ],
+  "2025": [
+    { "pos": 1, "name": "Voci Nuove", "note": "92/100" },
+    { "pos": 2, "name": "Gruppo Armonia", "note": "89/100" }
+  ],
+  "2024": [
+    { "pos": 1, "name": "Coro Alpino", "note": "90/100" }
+  ]
+}
