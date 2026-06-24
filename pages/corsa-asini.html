@@ -7,15 +7,21 @@
   <link rel="stylesheet" href="../styles/style.css" />
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Navigazione principale">
     <div class="container">
       <div class="logo"><h1>Palio</h1></div>
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">Chi Siamo</a></li>
-        <li><a href="services.html">Servizi</a></li>
-        <li><a href="albo.html">Albo d'oro</a></li>
-        <li><a href="contact.html">Contatti</a></li>
+
+      <!-- hamburger toggle per mobile -->
+      <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Apri menu">
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <ul id="main-nav" class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="../index.html">Home</a></li>
+        <li role="none"><a role="menuitem" href="about.html">Chi Siamo</a></li>
+        <li role="none"><a role="menuitem" href="services.html">Servizi</a></li>
+        <li role="none"><a role="menuitem" href="albo.html">Albo d'oro</a></li>
+        <li role="none"><a role="menuitem" href="contact.html">Contatti</a></li>
       </ul>
     </div>
   </nav>
@@ -26,10 +32,10 @@
 
     <div class="albo-controls">
       <label for="year-select">Anno:
-        <select id="year-select"></select>
+        <select id="year-select" aria-label="Seleziona anno"></select>
       </label>
       <label for="search-input">Cerca:
-        <input id="search-input" type="search" placeholder="Cerca per nome/contrada o note" />
+        <input id="search-input" type="search" placeholder="Cerca per nome/contrada o note" aria-label="Cerca" />
       </label>
       <button id="export-csv" class="btn">Esporta CSV</button>
       <button id="print-btn" class="btn">Stampa</button>
@@ -64,6 +70,7 @@
   </footer>
 
   <script src="../js/albo.js"></script>
+  <script src="../js/menu-hamburger.js"></script>
   <script>
     // inizializza la pagina evento usando initEventPage con la chiave esatta dell'evento
     document.addEventListener('DOMContentLoaded', ()=> initEventPage('Corsa degli asini'));
