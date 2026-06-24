@@ -1,7 +1,163 @@
+/* Stile principale migliorato per il sito Palio
+   Merge delle regole esistenti con aggiunte per l'Albo d'oro e miglioramenti accessibilità.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2b6cb0; /* aggiornato */
+    --secondary-color: #f6ad55;
+    --dark-color: #0b1220;
+    --light-color: #f8f9fa;
+    --accent-color: #e74c3c;
+    --text-color: #222;
+    --border-radius: 12px;
+    --transition: all 0.25s ease;
+    --max-width: 1100px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--light-color);
+}
+
+/* NAVIGAZIONE */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.45rem 0.75rem;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.nav-links a:hover, .nav-links a[aria-current="page"] {
+    background: rgba(255,255,255,0.08);
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(180deg, rgba(0,0,0,0.05), transparent);
+    padding: 2.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-content{padding:1rem 0}
+
+.btn{display:inline-block;padding:.5rem .75rem;border-radius:6px;border:0;background:var(--primary-color);color:#fff;text-decoration:none;cursor:pointer}
+.btn.secondary{background:var(--accent-color);color:#000}
+
+h1,h2,h3{color:var(--dark-color)}
+
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.feature-card{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(2,6,23,0.06)}
+
+.footer{background:var(--dark-color);color:#fff;padding:1rem 0;margin-top:2rem}
+.footer .container{display:flex;justify-content:space-between;align-items:center}
+.footer-links{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+
+/* ALBO SPECIFIC */
+.albo-section{background:#fff;padding:1rem;border-radius:8px;margin:1rem 0;box-shadow:0 1px 3px rgba(2,6,23,0.04)}
+.albo-controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:1rem}
+.albo-controls label{font-weight:600}
+.albo-controls select,input[type="search"]{padding:.4rem .5rem;border:1px solid #e6e9ee;border-radius:6px}
+.albo-controls .btn{padding:.35rem .6rem}
+.table-wrap{overflow:auto}
+table.albo-table{width:100%;border-collapse:collapse;margin-bottom:0}
+table.albo-table th, table.albo-table td{padding:.6rem .8rem;border-bottom:1px solid #eef2f7;text-align:left}
+table.albo-table thead th{background:#f4f6fb;font-weight:700}
+
+/* Controls row */
+.controls-row{display:flex;gap:.5rem;align-items:center}
+.controls-row .spacer{flex:1}
+
+/* Utility */
+.text-muted{color:#6b7280;font-size:.95rem}
+.small-note{color:#666;font-size:0.9rem}
+
 /* stemma nel logo */
 .logo{display:flex;align-items:center;gap:.6rem}
 .logo-stemma{width:56px;height:auto;display:block;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.15)}
 @media (max-width:720px){
   .logo-stemma{width:40px}
   .logo h1{font-size:1rem}
+}
+
+/* Hamburger & mobile nav */
+.nav-toggle{display:none;align-items:center;justify-content:center;border:0;background:transparent;color:#fff;width:44px;height:44px;border-radius:6px;cursor:pointer}
+.nav-toggle .bar{display:block;width:22px;height:2px;background:#fff;border-radius:2px;position:relative}
+.nav-toggle .bar::before,.nav-toggle .bar::after{content:"";position:absolute;left:0;width:22px;height:2px;background:#fff;border-radius:2px}
+.nav-toggle .bar::before{top:-6px}
+.nav-toggle .bar::after{top:6px}
+
+.nav-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.35);opacity:0;pointer-events:none;transition:opacity .28s ease;z-index:48}
+.nav-backdrop.visible{opacity:1;pointer-events:auto}
+
+@media (max-width:720px){
+  .nav-toggle{display:flex}
+  .nav-links{display:none;position:fixed;top:64px;left:8px;right:8px;background:linear-gradient(180deg,rgba(75,35,35,0.95),rgba(60,28,28,0.95));flex-direction:column;padding:.75rem;border-radius:8px;gap:.5rem;z-index:49;max-height:0;overflow:hidden;opacity:0;transform:scaleY(0.95);transition:max-height .28s ease,opacity .28s ease,transform .28s ease}
+  .nav-links.open{display:flex;max-height:420px;opacity:1;transform:scaleY(1)}
+  .nav-links a{color:#fff;padding:.6rem .8rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06)}
+  .albo-controls{flex-direction:column;align-items:stretch}
+  .albo-controls label, .albo-controls input, .albo-controls select{width:100%}
+  .albo-controls .btn{width:100%;text-align:center}
+  .table-wrap{overflow:visible}
+  table.albo-table, table.albo-table thead, table.albo-table tbody, table.albo-table th, table.albo-table td, table.albo-table tr{display:block;width:100%}
+  table.albo-table thead{display:none}
+  table.albo-table tbody tr{display:block;margin:0 0 .75rem;padding:.75rem;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.95),rgba(250,245,235,0.95));box-shadow:0 3px 8px rgba(43,27,16,0.06)}
+  table.albo-table td{display:flex;justify-content:space-between;padding:.4rem 0;border-bottom:none}
+  table.albo-table td:first-child{font-weight:800;color:var(--primary-color);width:30%}
+  table.albo-table td:nth-child(2){width:55%}
+  table.albo-table td:nth-child(3){width:15%;text-align:right;color:#6b6b55}
+  .btn{font-size:1rem;padding:.65rem}
+}
+
+/* Small screens: make header compact */
+@media (max-width:420px){
+  h1{font-size:1.4rem}
+  .albo-controls .btn{padding:.6rem}
+  .logo h1{font-size:.95rem}
+}
+
+/* Print */
+@media print{
+  body{background:#fff;color:#000}
+  .nav-links,.btn{display:none}
+  .albo-section{box-shadow:none;border:none}
 }
