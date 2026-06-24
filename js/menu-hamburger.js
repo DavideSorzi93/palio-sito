@@ -34,6 +34,62 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // Imposta aria-current="page" sui link di navigazione corrispondenti alla pagina attiva
+  function normalizePath(p) {
+    if (!p) return '';
+    // rimuovi query e hash
+    p = p.split('?')[0].split('#')[0];
+    // rimuovi eventuale slash finale
+    p = p.replace(/\/$/, '');
+    if (p === '') return '/index.html';
+    return p;
+  }
+
+  function setAriaCurrent() {
+    const links = nav.querySelectorAll('a[role="menuitem"], .nav-links a');
+    let currentPath = normalizePath(location.pathname);
+    // tratta '/' come '/index.html' per corrispondenza con i link che puntano a index.html
+    if (currentPath === '/') currentPath = '/index.html';
+
+    links.forEach(a => {
+      try {
+        const href = a.getAttribute('href');
+        const resolved = new URL(href, location.href);
+        let linkPath = normalizePath(resolved.pathname);
+        if (linkPath === '/') linkPath = '/index.html';
+
+        if (linkPath === currentPath) {
+          a.setAttribute('aria-current', 'page');
+        } else {
+          a.removeAttribute('aria-current');
+        }
+      } catch (e) {
+        // ignore malformed hrefs
+      }
+    });
+  }
+
+  // Aggiorna aria-current al caricamento
+  setAriaCurrent();
+
+  // Se il sito è single-page o i link vengono gestiti via JS, aggiorna aria-current anche prima della navigazione
+  nav.addEventListener('click', function (e) {
+    const a = e.target.closest('a');
+    if (!a) return;
+    // Imposta aria-current immediatamente per rispecchiare la selezione dell'utente
+    try {
+      const href = a.getAttribute('href');
+      const resolved = new URL(href, location.href);
+      const linkPath = normalizePath(resolved.pathname) || '/index.html';
+
+      // rimuove aria-current da tutti e lo imposta sul cliccato
+      nav.querySelectorAll('a[aria-current="page"]').forEach(el => el.removeAttribute('aria-current'));
+      a.setAttribute('aria-current', 'page');
+    } catch (err) {
+      // ignore
+    }
+  });
+
   toggle.addEventListener('click', function (e) {
     e.stopPropagation();
     setOpen(!nav.classList.contains('open'));
@@ -53,4 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', function () {
     if (window.innerWidth > 720 && nav.classList.contains('open')) setOpen(false);
   });
+
+  // se la navigazione avviene senza ricaricare (pushState), ascolta i cambi di history
+  window.addEventListener('popstate', setAriaCurrent);
 });
