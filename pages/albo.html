@@ -7,15 +7,21 @@
   <link rel="stylesheet" href="../styles/style.css" />
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Navigazione principale">
     <div class="container">
       <div class="logo"><h1>Palio</h1></div>
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">Chi Siamo</a></li>
-        <li><a href="services.html">Servizi</a></li>
-        <li><a href="albo.html" aria-current="page">Albo d'oro</a></li>
-        <li><a href="contact.html">Contatti</a></li>
+
+      <!-- hamburger toggle per mobile -->
+      <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Apri menu">
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <ul id="main-nav" class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="../index.html">Home</a></li>
+        <li role="none"><a role="menuitem" href="about.html">Chi Siamo</a></li>
+        <li role="none"><a role="menuitem" href="services.html">Servizi</a></li>
+        <li role="none"><a role="menuitem" href="albo.html" aria-current="page">Albo d'oro</a></li>
+        <li role="none"><a role="menuitem" href="contact.html">Contatti</a></li>
       </ul>
     </div>
   </nav>
@@ -27,13 +33,13 @@
     <div class="controls-row">
       <div class="albo-controls">
         <label for="event-select">Evento:
-          <select id="event-select"></select>
+          <select id="event-select" aria-label="Seleziona evento"></select>
         </label>
         <label for="year-select">Anno:
-          <select id="year-select"></select>
+          <select id="year-select" aria-label="Seleziona anno"></select>
         </label>
         <label for="search-input">Cerca:
-          <input id="search-input" type="search" placeholder="Cerca per nome, contrada, squadra..." />
+          <input id="search-input" type="search" placeholder="Cerca per nome, contrada, squadra..." aria-label="Cerca risultati" />
         </label>
         <button id="sort-btn" class="btn">Ordina per posizione ⇅</button>
         <button id="export-csv" class="btn">Esporta CSV</button>
@@ -75,6 +81,7 @@
   </footer>
 
   <script src="../js/albo.js"></script>
+  <script src="../js/menu-hamburger.js"></script>
   <script>
     // inizializza la view multipla
     document.addEventListener('DOMContentLoaded', ()=> initAlboPage());
