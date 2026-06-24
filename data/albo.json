@@ -1,0 +1,47 @@
+{
+  "Corsa degli asini": {
+    "2026": [
+      { "pos": 1, "name": "Contrada del Sole", "note": "02:34" },
+      { "pos": 2, "name": "Contrada della Luna", "note": "02:47" },
+      { "pos": 3, "name": "Contrada del Ponte", "note": "03:05" }
+    ],
+    "2025": [
+      { "pos": 1, "name": "Contrada della Luna", "note": "02:40" },
+      { "pos": 2, "name": "Contrada del Vento", "note": "02:55" },
+      { "pos": 3, "name": "Contrada del Sole", "note": "03:10" }
+    ],
+    "2024": [
+      { "pos": 1, "name": "Contrada del Ponte", "note": "02:50" },
+      { "pos": 2, "name": "Contrada del Vento", "note": "03:00" }
+    ]
+  },
+  "Canzoniere": {
+    "2026": [
+      { "pos": 1, "name": "Gruppo Armonia", "note": "95/100 - Menzione speciale" },
+      { "pos": 2, "name": "Coro Alpino", "note": "90/100" },
+      { "pos": 3, "name": "Voci Nuove", "note": "88/100" }
+    ],
+    "2025": [
+      { "pos": 1, "name": "Voci Nuove", "note": "92/100" },
+      { "pos": 2, "name": "Gruppo Armonia", "note": "89/100" }
+    ],
+    "2024": [
+      { "pos": 1, "name": "Coro Alpino", "note": "90/100" }
+    ]
+  },
+  "Torneo calcetto": {
+    "2026": [
+      { "pos": 1, "name": "FC Palio", "note": "Finale 3-1" },
+      { "pos": 2, "name": "Real Contrada", "note": "" },
+      { "pos": 3, "name": "I Briganti", "note": "Vinto semifinale ai rigori" },
+      { "pos": 4, "name": "Le Aquile", "note": "" }
+    ],
+    "2025": [
+      { "pos": 1, "name": "Real Contrada", "note": "Finale 2-0" },
+      { "pos": 2, "name": "FC Palio", "note": "" }
+    ],
+    "2024": [
+      { "pos": 1, "name": "I Briganti", "note": "" }
+    ]
+  }
+}
