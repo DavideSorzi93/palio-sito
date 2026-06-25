@@ -578,6 +578,7 @@ table.albo-table tbody tr.rank-bronze td:first-child {
    HOME PAGE
    ========================================================= */
 
+
 .hero-home {
   min-height: 480px;
   display: flex;
@@ -586,21 +587,24 @@ table.albo-table tbody tr.rank-bronze td:first-child {
   overflow: hidden;
   color: #fff;
   background: linear-gradient(135deg, #2b6cb0 0%, #e74c3c 100%);
+  padding: 0;
+  margin-bottom: 2rem;
 }
+
 
 .hero-home::after {
   content: "";
   position: absolute;
-  right: clamp(2rem, 8vw, 7rem);
+  right: clamp(1rem, 7vw, 6rem);
   top: 50%;
-  width: clamp(180px, 24vw, 340px);
-  height: clamp(180px, 24vw, 340px);
+  width: clamp(180px, 22vw, 320px);
+  height: clamp(180px, 22vw, 320px);
   background-image: url("../assets/stemma.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   transform: translateY(-50%);
-  opacity: 0.16;
+  opacity: 0.14;
   pointer-events: none;
 }
 
@@ -776,8 +780,16 @@ table.albo-table tbody tr.rank-bronze td:first-child {
     background:
       linear-gradient(135deg, rgba(43, 108, 176, 0.95), rgba(231, 76, 60, 0.9));
   }
+   
+.hero-home::after {
+    width: 220px;
+    height: 220px;
+    right: -70px;
+    top: 58%;
+    opacity: 0.10;
+  }
 
-  .hero-home .hero-content {
+     .hero-home .hero-content {
     padding: 2rem 1rem;
   }
 
