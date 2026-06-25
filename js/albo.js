@@ -55,25 +55,46 @@
     onEventChange();
   }
 
-  // Popola anni per evento selezionato
-  function populateYearSelect() {
-    const sel = document.getElementById('year-select');
-    if (!sel) return;
-    sel.innerHTML = '';
-    if (!currentEvent || !ALBO_DATA[currentEvent]) {
-      sel.innerHTML = '<option>—</option>';
-      return;
-    }
-    const years = Object.keys(ALBO_DATA[currentEvent]).sort((a,b)=>b-a);
-    years.forEach(y=>{
-      const opt = document.createElement('option');
-      opt.value = y; opt.textContent = y;
-      sel.appendChild(opt);
-    });
-    sel.addEventListener('change', onYearChange);
-    sel.value = years[0] || '';
-    onYearChange();
+  // Popola anni per evento selezionato mantenendo l'anno scelto se disponibile
+function populateYearSelect() {
+  const sel = document.getElementById('year-select');
+  if (!sel) return;
+
+  // Salvo l'anno attualmente selezionato prima di ricostruire la select
+  const previousYear = currentYear || sel.value;
+
+  sel.innerHTML = '';
+
+  if (!currentEvent || !ALBO_DATA[currentEvent]) {
+    sel.innerHTML = '<option>—</option>';
+    currentYear = null;
+    return;
   }
+
+  const years = Object.keys(ALBO_DATA[currentEvent]).sort((a, b) => b - a);
+
+  years.forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = y;
+    sel.appendChild(opt);
+  });
+
+  // Evita di aggiungere più volte lo stesso event listener
+  sel.onchange = onYearChange;
+
+  // Se l'anno precedente esiste anche nel nuovo evento, lo mantengo
+  if (previousYear && years.includes(previousYear)) {
+    sel.value = previousYear;
+    currentYear = previousYear;
+  } else {
+    // Altrimenti uso il primo anno disponibile
+    sel.value = years[0] || '';
+    currentYear = sel.value || null;
+  }
+
+  renderTable();
+}
   
   // Rendering tabella in base a filtro/ordinamento
 function renderTable() {
