@@ -15,7 +15,21 @@
       { "pos": 2, "name": "---", "note": "" }
     ]
   },
-  "Canzoniere": {
+  "Canzoniere - Canzone": {
+    "2026": [
+    { "pos": 1, "name": "Vignali", "note": "Maiali" },
+    { "pos": 2, "name": "---", "note": "" },
+    { "pos": 3, "name": "---", "note": "" }
+  ],
+  "2025": [
+    { "pos": 1, "name": "---", "note": "92/100" },
+    { "pos": 2, "name": "---", "note": "89/100" }
+  ],
+  "2024": [
+    { "pos": 1, "name": "---", "note": "90/100" }
+  ]
+  },
+  "Canzoniere - Coreografia": {
     "2026": [
     { "pos": 1, "name": "Vignali", "note": "Maiali" },
     { "pos": 2, "name": "---", "note": "" },
@@ -30,6 +44,36 @@
   ]
   },
   "Torneo calcetto": {
+   "2026": [
+    { "pos": 1, "name": "Strinciöl", "note": "" },
+    { "pos": 2, "name": "Teren de Süra", "note": "" },
+    { "pos": 3, "name": "Bravi", "note": "" },
+    { "pos": 4, "name": "Vignali", "note": "" }
+  ],
+  "2025": [
+    { "pos": 1, "name": "---", "note": "Finale 2-0" },
+    { "pos": 2, "name": "---", "note": "" }
+  ],
+  "2024": [
+    { "pos": 1, "name": "---", "note": "" }
+  ]
+  },
+  "Torneo pallavolo": {
+   "2026": [
+    { "pos": 1, "name": "Strinciöl", "note": "" },
+    { "pos": 2, "name": "Teren de Süra", "note": "" },
+    { "pos": 3, "name": "Bravi", "note": "" },
+    { "pos": 4, "name": "Vignali", "note": "" }
+  ],
+  "2025": [
+    { "pos": 1, "name": "---", "note": "Finale 2-0" },
+    { "pos": 2, "name": "---", "note": "" }
+  ],
+  "2024": [
+    { "pos": 1, "name": "---", "note": "" }
+  ]
+  },
+  "Torneo bocce": {
    "2026": [
     { "pos": 1, "name": "Strinciöl", "note": "" },
     { "pos": 2, "name": "Teren de Süra", "note": "" },
