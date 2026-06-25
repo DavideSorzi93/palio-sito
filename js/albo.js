@@ -273,7 +273,6 @@
   }
 
   // Aggiungi record in memoria
-  // Nota: ora serve anche l'anno, perché non c'è più il select anno nella pagina principale.
   function adminAdd(e) {
     e.preventDefault();
 
