@@ -840,3 +840,16 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
   }
 }
 
+/* Separatore anno nella tabella Albo */
+table.albo-table tr.year-separator td {
+  background: linear-gradient(135deg, var(--dark-color), #1e3a5f);
+  color: #fff3c4;
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  border-bottom: none;
+  border-top: 1.5rem solid #fff;
+  text-align: left;
+}
