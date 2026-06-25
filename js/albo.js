@@ -185,7 +185,18 @@ function renderTable() {
   
     const tdPos = document.createElement('td');
     tdPos.setAttribute('data-label', 'Posizione');
+    /*tdPos.textContent = r.pos || '';*/
+     
+  if (posizione === 1) {
+    tdPos.textContent = `🥇 ${r.pos}`;
+  } else if (posizione === 2) {
+    tdPos.textContent = `🥈 ${r.pos}`;
+  } else if (posizione === 3) {
+    tdPos.textContent = `🥉 ${r.pos}`;
+  } else {
     tdPos.textContent = r.pos || '';
+  }
+
   
     const tdName = document.createElement('td');
     tdName.setAttribute('data-label', 'Nome');
