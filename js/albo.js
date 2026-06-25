@@ -135,11 +135,30 @@
       return;
     }
 
+    let lastYear = null;
+
     filtered.forEach(r => {
+      // Inserisce una riga separatrice ogni volta che cambia l'anno
+      if (r.year !== lastYear) {
+        const yearRow = document.createElement('tr');
+        yearRow.classList.add('year-separator');
+    
+        const yearCell = document.createElement('td');
+        yearCell.setAttribute('colspan', '4');
+        yearCell.textContent = `Anno ${r.year}`;
+    
+        yearRow.appendChild(yearCell);
+        tbody.appendChild(yearRow);
+    
+        lastYear = r.year;
+      }
+    
+      // Riga normale del risultato
       const tr = document.createElement('tr');
     
       const posizione = Number(r.pos);
     
+      // Classi per podio
       if (posizione === 1) {
         tr.classList.add('rank-gold');
       } else if (posizione === 2) {
@@ -148,18 +167,22 @@
         tr.classList.add('rank-bronze');
       }
     
+      // Colonna Anno
       const tdYear = document.createElement('td');
       tdYear.setAttribute('data-label', 'Anno');
       tdYear.textContent = r.year || '';
     
+      // Colonna Posizione
       const tdPos = document.createElement('td');
       tdPos.setAttribute('data-label', 'Posizione');
       tdPos.textContent = r.pos || '';
     
+      // Colonna Nome
       const tdName = document.createElement('td');
       tdName.setAttribute('data-label', 'Nome');
       tdName.textContent = r.name || '';
     
+      // Colonna Note
       const tdNote = document.createElement('td');
       tdNote.setAttribute('data-label', 'Note');
       tdNote.textContent = r.note || '';
