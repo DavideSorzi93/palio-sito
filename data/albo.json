@@ -2,8 +2,8 @@
   "Corsa degli asini": {
     "2026": [
       { "pos": 1, "name": "Castegnate", "note": "Davide Boroni" },
-      { "pos": 2, "name": "---", "note": "02:47" },
-      { "pos": 3, "name": "---", "note": "03:05" }
+      { "pos": 2, "name": "---", "note": "" },
+      { "pos": 3, "name": "---", "note": "" }
     ],
     "2025": [
       { "pos": 1, "name": "Castegnate", "note": "Davide Boroni" },
@@ -11,8 +11,8 @@
       { "pos": 3, "name": "---", "note": "" }
     ],
     "2024": [
-      { "pos": 1, "name": "Castegnate", "note": "02:50" },
-      { "pos": 2, "name": "---", "note": "03:00" }
+      { "pos": 1, "name": "Castegnate", "note": "Davide Boroni" },
+      { "pos": 2, "name": "---", "note": "" }
     ]
   },
   "Canzoniere": {
