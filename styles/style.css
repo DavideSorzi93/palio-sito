@@ -137,6 +137,88 @@ table.albo-table thead th{background:#f4f6fb;font-weight:700}
   .albo-controls{flex-direction:column;align-items:stretch}
   .albo-controls label, .albo-controls input, .albo-controls select{width:100%}
   .albo-controls .btn{width:100%;text-align:center}
+
+  .table-wrap {  overflow: visible; }
+
+table.albo-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table.albo-table,
+table.albo-table thead,
+table.albo-table tbody,
+table.albo-table th,
+table.albo-table td,
+table.albo-table tr {
+  display: block;
+  width: 100%;
+}
+
+table.albo-table thead {
+  display: none;
+}
+
+table.albo-table tbody tr {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 5px 16px rgba(15, 23, 42, 0.10);
+  border-left: 5px solid var(--primary-color);
+}
+
+table.albo-table td {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #eef2f7;
+  text-align: right;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+table.albo-table td:last-child {
+  border-bottom: none;
+}
+
+table.albo-table td::before {
+  content: attr(data-label);
+  flex: 0 0 42%;
+  text-align: left;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+/* Riga posizione più evidente */
+table.albo-table td:first-child {
+  margin: -1rem -1rem 0.6rem -1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 16px 16px 0 0;
+  background: rgba(43, 108, 176, 0.08);
+  border-bottom: none;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+/* Nome più leggibile */
+table.albo-table td:nth-child(2) {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Note più discrete */
+table.albo-table td:nth-child(3) {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+
+   
+   /*
   .table-wrap{overflow:visible}
   table.albo-table, table.albo-table thead, table.albo-table tbody, table.albo-table th, table.albo-table td, table.albo-table tr{display:block;width:100%}
   table.albo-table thead{display:none}
@@ -144,7 +226,8 @@ table.albo-table thead th{background:#f4f6fb;font-weight:700}
   table.albo-table td{display:flex;justify-content:space-between;padding:.4rem 0;border-bottom:none}
   table.albo-table td:first-child{font-weight:800;color:var(--primary-color);width:30%}
   table.albo-table td:nth-child(2){width:55%}
-  table.albo-table td:nth-child(3){width:15%;text-align:right;color:#6b6b55}
+  table.albo-table td:nth-child(3){width:15%;text-align:right;color:#6b6b55}*/
+   
   .btn{font-size:1rem;padding:.65rem}
 }
 
