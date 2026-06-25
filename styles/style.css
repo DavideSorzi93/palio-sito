@@ -926,24 +926,6 @@ table.albo-table tbody tr:not(.year-separator):hover td:nth-child(3) {
   color: var(--primary-color);
 }
 
-@media (max-width: 720px) {
-
-  /* Nome più evidente nelle card mobile */
-  table.albo-table tbody tr:not(.year-separator) td:nth-child(3) {
-    background: rgba(43, 108, 176, 0.08);
-    color: var(--dark-color);
-    font-size: 1.05rem;
-    font-weight: 900;
-    padding: 0.75rem 0;
-    border-radius: 10px;
-  }
-
-  table.albo-table tbody tr:not(.year-separator) td:nth-child(3)::before {
-    color: var(--primary-color);
-    font-weight: 900;
-  }
-}
-
 /* =========================================================
    MOBILE - NOME IN RISALTO SENZA ALONE
    ========================================================= */
