@@ -96,59 +96,81 @@ function populateYearSelect() {
   renderTable();
 }
   
-  // Rendering tabella in base a filtro/ordinamento
+// Rendering tabella storico completo per evento selezionato
 function renderTable() {
   const tbody = document.querySelector('#albo-table tbody');
   if (!tbody) return;
 
   tbody.innerHTML = '';
 
-  if (!currentEvent || !currentYear) {
+  if (!currentEvent || !ALBO_DATA[currentEvent]) {
     tbody.innerHTML = `
       <tr class="empty-row">
-        <td colspan="3">Seleziona un evento e un anno</td>
+        <td colspan="4">Seleziona un evento</td>
       </tr>
     `;
     return;
   }
 
-  const rows = (ALBO_DATA[currentEvent] && ALBO_DATA[currentEvent][currentYear])
-    ? [...ALBO_DATA[currentEvent][currentYear]]
-    : [];
-
   const searchEl = document.getElementById('search-input');
   const search = searchEl ? (searchEl.value || '').trim().toLowerCase() : '';
 
-  // Filtro
+  const rows = [];
+
+  // Trasforma la struttura:
+  // Evento -> Anno -> risultati
+  // in una lista piatta con anche l'anno
+  Object.keys(ALBO_DATA[currentEvent]).forEach(year => {
+    const risultatiAnno = ALBO_DATA[currentEvent][year] || [];
+
+    risultatiAnno.forEach(r => {
+      rows.push({
+        year: year,
+        pos: r.pos,
+        name: r.name,
+        note: r.note || ''
+      });
+    });
+  });
+
+  // Filtro ricerca
   const filtered = rows.filter(r => {
     if (!search) return true;
 
-    const text = `${r.name || ''} ${r.note || ''} ${r.pos || ''}`.toLowerCase();
+    const text = `${r.year || ''} ${r.pos || ''} ${r.name || ''} ${r.note || ''}`.toLowerCase();
     return text.includes(search);
   });
 
-  // Ordinamento per posizione
+  // Ordinamento:
+  // prima anno decrescente, poi posizione crescente/decrescente
   filtered.sort((a, b) => {
+    const ya = Number(a.year) || 0;
+    const yb = Number(b.year) || 0;
+
+    if (yb !== ya) {
+      return yb - ya; // anni dal più recente al più vecchio
+    }
+
     const pa = Number(a.pos) || 0;
     const pb = Number(b.pos) || 0;
+
     return sortAsc ? pa - pb : pb - pa;
   });
 
   if (!filtered.length) {
     tbody.innerHTML = `
       <tr class="empty-row">
-        <td colspan="3">Nessun risultato</td>
+        <td colspan="4">Nessun risultato</td>
       </tr>
     `;
     return;
   }
 
-  
-   filtered.forEach(r => {
+  filtered.forEach(r => {
     const tr = document.createElement('tr');
-  
+
     const posizione = Number(r.pos);
-  
+
     if (posizione === 1) {
       tr.classList.add('rank-gold');
     } else if (posizione === 2) {
@@ -156,46 +178,40 @@ function renderTable() {
     } else if (posizione === 3) {
       tr.classList.add('rank-bronze');
     }
-  
+
+    const tdYear = document.createElement('td');
+    tdYear.setAttribute('data-label', 'Anno');
+    tdYear.textContent = r.year || '';
+
     const tdPos = document.createElement('td');
     tdPos.setAttribute('data-label', 'Posizione');
-    /*tdPos.textContent = r.pos || '';*/
-     
-  if (posizione === 1) {
-    tdPos.textContent = `🥇 ${r.pos}`;
-  } else if (posizione === 2) {
-    tdPos.textContent = `🥈 ${r.pos}`;
-  } else if (posizione === 3) {
-    tdPos.textContent = `🥉 ${r.pos}`;
-  } else {
     tdPos.textContent = r.pos || '';
-  }
 
-  
     const tdName = document.createElement('td');
     tdName.setAttribute('data-label', 'Nome');
     tdName.textContent = r.name || '';
-  
+
     const tdNote = document.createElement('td');
     tdNote.setAttribute('data-label', 'Note');
     tdNote.textContent = r.note || '';
-  
+
+    tr.appendChild(tdYear);
     tr.appendChild(tdPos);
     tr.appendChild(tdName);
     tr.appendChild(tdNote);
-  
+
     tbody.appendChild(tr);
   });
-  
 }
   
   // Event handlers
   function onEventChange() {
-    const sel = document.getElementById('event-select');
-    currentEvent = sel ? sel.value : null;
-    populateYearSelect();
-    updateEventLinks();
-  }
+  const sel = document.getElementById('event-select');
+  currentEvent = sel ? sel.value : null;
+  renderTable();
+  updateEventLinks();
+ }
+  
   function onYearChange() {
     const sel = document.getElementById('year-select');
     currentYear = sel ? sel.value : null;
