@@ -71,18 +71,6 @@
       {"pos": 3, "name": "---",        "note": ""             }
     ]
   },
-  "Canzoniere - Coreografia": {
-    "2024": [ {"pos": 1, "name": "---", "note": ""} ],
-    "2025": [
-      {"pos": 1, "name": "---", "note": ""},
-      {"pos": 2, "name": "---", "note": ""}
-    ],
-    "2026": [
-      {"pos": 1, "name": "Mercato", "note": "Drogato"},
-      {"pos": 2, "name": "---",     "note": ""       },
-      {"pos": 3, "name": "---",     "note": ""       }
-    ]
-  },
   "Canzoniere - Canzone": {
     "2024": [ {"pos": 1, "name": "---", "note": ""} ],
     "2025": [
@@ -93,6 +81,18 @@
       {"pos": 1, "name": "Vignali", "note": "Maiali"},
       {"pos": 2, "name": "---",     "note": ""      },
       {"pos": 3, "name": "---",     "note": ""      }
+    ]
+  },
+  "Canzoniere - Coreografia": {
+    "2024": [ {"pos": 1, "name": "---", "note": ""} ],
+    "2025": [
+      {"pos": 1, "name": "---", "note": ""},
+      {"pos": 2, "name": "---", "note": ""}
+    ],
+    "2026": [
+      {"pos": 1, "name": "Mercato", "note": "Drogato"},
+      {"pos": 2, "name": "---",     "note": ""       },
+      {"pos": 3, "name": "---",     "note": ""       }
     ]
   },
   "Calcetto": {
