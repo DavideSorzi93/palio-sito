@@ -943,3 +943,25 @@ table.albo-table tbody tr:not(.year-separator):hover td:nth-child(3) {
     font-weight: 900;
   }
 }
+
+/* =========================================================
+   MOBILE - NOME IN RISALTO SENZA ALONE
+   ========================================================= */
+
+@media (max-width: 720px) {
+
+  table.albo-table tbody tr:not(.year-separator) td:nth-child(3) {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    color: var(--dark-color);
+    font-size: 1.08rem;
+    font-weight: 900;
+    padding: 0.65rem 0;
+  }
+
+  table.albo-table tbody tr:not(.year-separator) td:nth-child(3)::before {
+    color: var(--primary-color);
+    font-weight: 900;
+  }
+}
