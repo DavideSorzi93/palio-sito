@@ -129,7 +129,7 @@ table.albo-table thead th{background:#f4f6fb;font-weight:700}
   .logo h1{font-size:1rem}
 }
 
-/* Hamburger & mobile nav */
+/* Hamburger e mobile nav */
 .nav-toggle{display:none;align-items:center;justify-content:center;border:0;background:transparent;color:#fff;width:44px;height:44px;border-radius:6px;cursor:pointer}
 .nav-toggle .bar{display:block;width:22px;height:2px;background:#fff;border-radius:2px;position:relative}
 .nav-toggle .bar::before,.nav-toggle .bar::after{content:"";position:absolute;left:0;width:22px;height:2px;background:#fff;border-radius:2px}
@@ -172,17 +172,17 @@ table.albo-table tbody tr.rank-bronze {
   background: linear-gradient(90deg, rgba(205, 127, 50, 0.20), #ffffff);
 }
 
-table.albo-table tbody tr.rank-gold td:first-child {
+table.albo-table tbody tr.rank-gold td:nth-child(2) {
   color: #b8860b;
   font-weight: 800;
 }
 
-table.albo-table tbody tr.rank-silver td:first-child {
+table.albo-table tbody tr.rank-silver td:nth-child(2) {
   color: #6b7280;
   font-weight: 800;
 }
 
-table.albo-table tbody tr.rank-bronze td:first-child {
+table.albo-table tbody tr.rank-bronze td:nth-child(2) {
   color: #92400e;
   font-weight: 800;
 }
@@ -840,7 +840,7 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
   }
 }
 
-/* Separatore anno nella tabella Albo */
+
 table.albo-table tr.year-separator td {
   background: linear-gradient(135deg, var(--dark-color), #1e3a5f);
   color: #fff3c4;
@@ -850,6 +850,51 @@ table.albo-table tr.year-separator td {
   text-transform: uppercase;
   padding: 0.75rem 1rem;
   border-bottom: none;
-  border-top: 1.5rem solid #fff;
+  border-top: 1.25rem solid #fff;
   text-align: left;
 }
+
+@media (max-width: 720px) {
+
+  table.albo-table tr.year-separator {
+    display: block;
+    margin: 1.25rem 0 0.75rem;
+    padding: 0;
+    border-left: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  table.albo-table tr.year-separator td {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--dark-color), #1e3a5f);
+    color: #fff3c4;
+    font-family: 'Cinzel', Georgia, serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: none;
+    border-top: none;
+    box-shadow: 0 5px 14px rgba(15, 23, 42, 0.18);
+  }
+
+  table.albo-table tr.year-separator td::before {
+    content: none;
+  }
+
+  table.albo-table tbody tr.year-separator:first-child {
+    margin-top: 0;
+  }
+}
+
+/* Prima barra anno senza troppo spazio sopra */
+table.albo-table tbody tr.year-separator:first-child td {
+  border-top: none;
+}
+
+
