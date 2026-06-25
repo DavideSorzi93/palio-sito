@@ -216,7 +216,36 @@ table.albo-table td:nth-child(3) {
   font-size: 0.9rem;
 }
 
+/* Card podio su smartphone */
+table.albo-table tbody tr.rank-gold {
+  border-left-color: #d4af37;
+  background: linear-gradient(180deg, #fff8dc, #ffffff);
+}
 
+table.albo-table tbody tr.rank-silver {
+  border-left-color: #a3a3a3;
+  background: linear-gradient(180deg, #f3f4f6, #ffffff);
+}
+
+table.albo-table tbody tr.rank-bronze {
+  border-left-color: #b45309;
+  background: linear-gradient(180deg, #fff1e6, #ffffff);
+}
+
+table.albo-table tbody tr.rank-gold td:first-child {
+  background: linear-gradient(90deg, #d4af37, #f9e79f);
+  color: #3f2f00;
+}
+
+table.albo-table tbody tr.rank-silver td:first-child {
+  background: linear-gradient(90deg, #c0c0c0, #eeeeee);
+  color: #374151;
+}
+
+table.albo-table tbody tr.rank-bronze td:first-child {
+  background: linear-gradient(90deg, #cd7f32, #f3c08a);
+  color: #3b1f05;
+}
    
    /*
   .table-wrap{overflow:visible}
