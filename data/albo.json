@@ -1,18 +1,18 @@
 {
   "Corsa degli asini": {
     "2026": [
-      { "pos": 1, "name": "Contrada del Sole", "note": "02:34" },
-      { "pos": 2, "name": "Contrada della Luna", "note": "02:47" },
-      { "pos": 3, "name": "Contrada del Ponte", "note": "03:05" }
+      { "pos": 1, "name": "Castegnate", "note": "Davide Boroni" },
+      { "pos": 2, "name": "---", "note": "02:47" },
+      { "pos": 3, "name": "---", "note": "03:05" }
     ],
     "2025": [
-      { "pos": 1, "name": "Contrada della Luna", "note": "02:40" },
-      { "pos": 2, "name": "Contrada del Vento", "note": "02:55" },
-      { "pos": 3, "name": "Contrada del Sole", "note": "03:10" }
+      { "pos": 1, "name": "Castegnate", "note": "Davide Boroni" },
+      { "pos": 2, "name": "---", "note": "" },
+      { "pos": 3, "name": "---", "note": "" }
     ],
     "2024": [
-      { "pos": 1, "name": "Contrada del Ponte", "note": "02:50" },
-      { "pos": 2, "name": "Contrada del Vento", "note": "03:00" }
+      { "pos": 1, "name": "Castegnate", "note": "02:50" },
+      { "pos": 2, "name": "---", "note": "03:00" }
     ]
   },
   "Canzoniere": {
