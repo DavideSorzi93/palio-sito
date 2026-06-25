@@ -43,7 +43,7 @@
     { "pos": 1, "name": "---", "note": "90/100" }
   ]
   },
-  "Torneo calcetto": {
+  "Calcetto": {
    "2026": [
     { "pos": 1, "name": "Strinciöl", "note": "" },
     { "pos": 2, "name": "Teren de Süra", "note": "" },
@@ -58,7 +58,7 @@
     { "pos": 1, "name": "---", "note": "" }
   ]
   },
-  "Torneo pallavolo": {
+  "Pallavolo": {
    "2026": [
     { "pos": 1, "name": "Strinciöl", "note": "" },
     { "pos": 2, "name": "Teren de Süra", "note": "" },
@@ -73,7 +73,22 @@
     { "pos": 1, "name": "---", "note": "" }
   ]
   },
-  "Torneo bocce": {
+  "Bocce": {
+   "2026": [
+    { "pos": 1, "name": "Strinciöl", "note": "" },
+    { "pos": 2, "name": "Teren de Süra", "note": "" },
+    { "pos": 3, "name": "Bravi", "note": "" },
+    { "pos": 4, "name": "Vignali", "note": "" }
+  ],
+  "2025": [
+    { "pos": 1, "name": "---", "note": "Finale 2-0" },
+    { "pos": 2, "name": "---", "note": "" }
+  ],
+  "2024": [
+    { "pos": 1, "name": "---", "note": "" }
+  ]
+  },
+  "Dodgeball": {
    "2026": [
     { "pos": 1, "name": "Strinciöl", "note": "" },
     { "pos": 2, "name": "Teren de Süra", "note": "" },
