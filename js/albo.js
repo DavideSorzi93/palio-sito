@@ -76,7 +76,7 @@
   }
 
   // Rendering tabella in base a filtro/ordinamento
-  function renderTable() {
+  /*function renderTable() {
     const tbody = document.querySelector('#albo-table tbody');
     if (!tbody) return;
     tbody.innerHTML = '';
@@ -121,7 +121,77 @@
       tbody.appendChild(tr);
     });
   }
+ */
+  // Rendering tabella in base a filtro/ordinamento
+function renderTable() {
+  const tbody = document.querySelector('#albo-table tbody');
+  if (!tbody) return;
 
+  tbody.innerHTML = '';
+
+  if (!currentEvent || !currentYear) {
+    tbody.innerHTML = `
+      <tr class="empty-row">
+        <td colspan="3">Seleziona un evento e un anno</td>
+      </tr>
+    `;
+    return;
+  }
+
+  const rows = (ALBO_DATA[currentEvent] && ALBO_DATA[currentEvent][currentYear])
+    ? [...ALBO_DATA[currentEvent][currentYear]]
+    : [];
+
+  const searchEl = document.getElementById('search-input');
+  const search = searchEl ? (searchEl.value || '').trim().toLowerCase() : '';
+
+  // Filtro
+  const filtered = rows.filter(r => {
+    if (!search) return true;
+
+    const text = `${r.name || ''} ${r.note || ''} ${r.pos || ''}`.toLowerCase();
+    return text.includes(search);
+  });
+
+  // Ordinamento per posizione
+  filtered.sort((a, b) => {
+    const pa = Number(a.pos) || 0;
+    const pb = Number(b.pos) || 0;
+    return sortAsc ? pa - pb : pb - pa;
+  });
+
+  if (!filtered.length) {
+    tbody.innerHTML = `
+      <tr class="empty-row">
+        <td colspan="3">Nessun risultato</td>
+      </tr>
+    `;
+    return;
+  }
+
+  filtered.forEach(r => {
+    const tr = document.createElement('tr');
+
+    const tdPos = document.createElement('td');
+    tdPos.setAttribute('data-label', 'Posizione');
+    tdPos.textContent = r.pos || '';
+
+    const tdName = document.createElement('td');
+    tdName.setAttribute('data-label', 'Nome');
+    tdName.textContent = r.name || '';
+
+    const tdNote = document.createElement('td');
+    tdNote.setAttribute('data-label', 'Note');
+    tdNote.textContent = r.note || '';
+
+    tr.appendChild(tdPos);
+    tr.appendChild(tdName);
+    tr.appendChild(tdNote);
+
+    tbody.appendChild(tr);
+  });
+}
+  
   // Event handlers
   function onEventChange() {
     const sel = document.getElementById('event-select');
