@@ -220,29 +220,56 @@ function renderTable() {
 
   // Ordinamento toggle
   function toggleSort() {
-    sortAsc = !sortAsc;
-    const btn = document.getElementById('sort-btn');
-    if (btn) btn.textContent = `Ordina per posizione ${sortAsc ? '⇧' : '⇩'}`;
-    renderTable();
+      sortAsc = !sortAsc;
+      const btn = document.getElementById('sort-btn');
+    
+      if (btn) {
+        btn.textContent = `Ordina posizioni ${sortAsc ? '⇧' : '⇩'}`;
+      }
+    
+      renderTable();
   }
 
   // Export CSV
   function exportCSV() {
-    if (!currentEvent || !currentYear) return alert('Seleziona evento e anno prima di esportare.');
-    const rows = (ALBO_DATA[currentEvent] && ALBO_DATA[currentEvent][currentYear]) ? [...ALBO_DATA[currentEvent][currentYear]] : [];
-    if (!rows.length) return alert('Nessun dato da esportare.');
-    const header = ['Posizione','Nome','Note'];
-    const lines = [header.join(',')];
-    rows.forEach(r => {
-      const vals = [r.pos || '', r.name || '', r.note || ''].map(v => {
-        const s = String(v).replace(/"/g,'""');
-        return s.includes(',') || s.includes('"') ? `"${s}"` : s;
+      if (!currentEvent) {
+        return alert('Seleziona evento prima di esportare.');
+      }
+    
+      const rows = [];
+    
+      Object.keys(ALBO_DATA[currentEvent]).forEach(year => {
+        const risultatiAnno = ALBO_DATA[currentEvent][year] || [];
+    
+        risultatiAnno.forEach(r => {
+          rows.push({
+            year: year,
+            pos: r.pos,
+            name: r.name,
+            note: r.note || ''
+          });
+        });
       });
-      lines.push(vals.join(','));
-    });
-    const filename = `albo-${slug(currentEvent)}-${currentYear}.csv`;
-    downloadBlob(filename, lines.join('\n'), 'text/csv;charset=utf-8;');
-  }
+    
+      if (!rows.length) {
+        return alert('Nessun dato da esportare.');
+      }
+    
+      const header = ['Anno', 'Posizione', 'Nome', 'Note'];
+      const lines = [header.join(',')];
+    
+      rows.forEach(r => {
+        const vals = [r.year || '', r.pos || '', r.name || '', r.note || ''].map(v => {
+          const s = String(v).replace(/"/g, '""');
+          return s.includes(',') || s.includes('"') ? `"${s}"` : s;
+        });
+    
+        lines.push(vals.join(','));
+      });
+    
+      const filename = `albo-${slug(currentEvent)}-storico.csv`;
+      downloadBlob(filename, lines.join('\n'), 'text/csv;charset=utf-8;');
+    }
 
   // Stampa
   function doPrint() {
