@@ -481,20 +481,20 @@ table.albo-table tbody tr.rank-bronze td:first-child {
     background: linear-gradient(180deg, #fff1e6, #ffffff);
   }
 
-  table.albo-table tbody tr.rank-gold td:first-child {
-    background: linear-gradient(90deg, #d4af37, #f9e79f);
-    color: #3f2f00;
-  }
+  table.albo-table tbody tr.rank-gold td:nth-child(2) {
+  color: #b8860b;
+  font-weight: 900;
+}
 
-  table.albo-table tbody tr.rank-silver td:first-child {
-    background: linear-gradient(90deg, #c0c0c0, #eeeeee);
-    color: #374151;
-  }
+table.albo-table tbody tr.rank-silver td:nth-child(2) {
+  color: #6b7280;
+  font-weight: 900;
+}
 
-  table.albo-table tbody tr.rank-bronze td:first-child {
-    background: linear-gradient(90deg, #cd7f32, #f3c08a);
-    color: #3b1f05;
-  }
+table.albo-table tbody tr.rank-bronze td:nth-child(2) {
+  color: #92400e;
+  font-weight: 900;
+}
 
 
   /* Righe vuote o messaggi errore */
