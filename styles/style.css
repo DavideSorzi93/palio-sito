@@ -81,7 +81,11 @@ body {
 .hero .hero-content{padding:1rem 0}
 
 .btn{display:inline-block;padding:.5rem .75rem;border-radius:6px;border:0;background:var(--primary-color);color:#fff;text-decoration:none;cursor:pointer}
-.btn.secondary{background:var(--accent-color);color:#000}
+
+.btn.secondary {
+  background: var(--accent-color);
+  color: #fff;
+}
 
 h1,h2,h3{color:var(--dark-color)}
 
@@ -127,151 +131,26 @@ table.albo-table thead th{background:#f4f6fb;font-weight:700}
 .nav-toggle .bar::after{top:6px}
 
 .nav-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.35);opacity:0;pointer-events:none;transition:opacity .28s ease;z-index:48}
-.nav-backdrop.visible{opacity:1;pointer-events:auto}
 
-@media (max-width:720px){
-  .nav-toggle{display:flex}
-  .nav-links{display:none;position:fixed;top:64px;left:8px;right:8px;background:linear-gradient(180deg,rgba(75,35,35,0.95),rgba(60,28,28,0.95));flex-direction:column;padding:.75rem;border-radius:8px;gap:.5rem;z-index:49;max-height:0;overflow:hidden;opacity:0;transform:scaleY(0.95);transition:max-height .28s ease,opacity .28s ease,transform .28s ease}
-  .nav-links.open{display:flex;max-height:420px;opacity:1;transform:scaleY(1)}
-  .nav-links a{color:#fff;padding:.6rem .8rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06)}
-  .albo-controls{flex-direction:column;align-items:stretch}
-  .albo-controls label, .albo-controls input, .albo-controls select{width:100%}
-  .albo-controls .btn{width:100%;text-align:center}
-
-  .table-wrap {  overflow: visible; }
-
-table.albo-table {
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-table.albo-table,
-table.albo-table thead,
-table.albo-table tbody,
-table.albo-table th,
-table.albo-table td,
-table.albo-table tr {
-  display: block;
-  width: 100%;
-}
-
-table.albo-table thead {
-  display: none;
-}
-
-table.albo-table tbody tr {
-  margin: 0 0 1rem;
-  padding: 1rem;
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 5px 16px rgba(15, 23, 42, 0.10);
-  border-left: 5px solid var(--primary-color);
-}
-
-table.albo-table td {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 0.55rem 0;
-  border-bottom: 1px solid #eef2f7;
-  text-align: right;
-  font-size: 0.95rem;
-  color: #374151;
-}
-
-table.albo-table td:last-child {
-  border-bottom: none;
-}
-
-table.albo-table td::before {
-  content: attr(data-label);
-  flex: 0 0 42%;
-  text-align: left;
-  font-weight: 700;
-  color: var(--dark-color);
-}
-
-/* Riga posizione più evidente */
-table.albo-table td:first-child {
-  margin: -1rem -1rem 0.6rem -1rem;
-  padding: 0.75rem 1rem;
-  border-radius: 16px 16px 0 0;
-  background: rgba(43, 108, 176, 0.08);
-  border-bottom: none;
-  color: var(--primary-color);
-  font-size: 1.1rem;
-  font-weight: 800;
-}
-
-/* Nome più leggibile */
-table.albo-table td:nth-child(2) {
-  font-weight: 700;
-  color: #111827;
-}
-
-/* Note più discrete */
-table.albo-table td:nth-child(3) {
-  color: #6b7280;
-  font-size: 0.9rem;
-}
-
-/* Card podio su smartphone */
-table.albo-table tbody tr.rank-gold {
-  border-left-color: #d4af37;
-  background: linear-gradient(180deg, #fff8dc, #ffffff);
-}
-
-table.albo-table tbody tr.rank-silver {
-  border-left-color: #a3a3a3;
-  background: linear-gradient(180deg, #f3f4f6, #ffffff);
-}
-
-table.albo-table tbody tr.rank-bronze {
-  border-left-color: #b45309;
-  background: linear-gradient(180deg, #fff1e6, #ffffff);
-}
-
-table.albo-table tbody tr.rank-gold td:first-child {
-  background: linear-gradient(90deg, #d4af37, #f9e79f);
-  color: #3f2f00;
-}
-
-table.albo-table tbody tr.rank-silver td:first-child {
-  background: linear-gradient(90deg, #c0c0c0, #eeeeee);
-  color: #374151;
-}
-
-table.albo-table tbody tr.rank-bronze td:first-child {
-  background: linear-gradient(90deg, #cd7f32, #f3c08a);
-  color: #3b1f05;
-}
-   
-   /*
-  .table-wrap{overflow:visible}
-  table.albo-table, table.albo-table thead, table.albo-table tbody, table.albo-table th, table.albo-table td, table.albo-table tr{display:block;width:100%}
-  table.albo-table thead{display:none}
-  table.albo-table tbody tr{display:block;margin:0 0 .75rem;padding:.75rem;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.95),rgba(250,245,235,0.95));box-shadow:0 3px 8px rgba(43,27,16,0.06)}
-  table.albo-table td{display:flex;justify-content:space-between;padding:.4rem 0;border-bottom:none}
-  table.albo-table td:first-child{font-weight:800;color:var(--primary-color);width:30%}
-  table.albo-table td:nth-child(2){width:55%}
-  table.albo-table td:nth-child(3){width:15%;text-align:right;color:#6b6b55}*/
-   
-  .btn{font-size:1rem;padding:.65rem}
-}
-
-/* Small screens: make header compact */
-@media (max-width:420px){
-  h1{font-size:1.4rem}
-  .albo-controls .btn{padding:.6rem}
-  .logo h1{font-size:.95rem}
-}
 
 /* Print */
-@media print{
-  body{background:#fff;color:#000}
-  .nav-links,.btn{display:none}
-  .albo-section{box-shadow:none;border:none}
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .nav-links,
+  .btn,
+  .nav-toggle,
+  .albo-controls {
+    display: none;
+  }
+
+  .albo-section {
+    box-shadow: none;
+    border: none;
+  }
 }
 
 /* Colori podio */
@@ -301,6 +180,7 @@ table.albo-table tbody tr.rank-bronze td:first-child {
   color: #92400e;
   font-weight: 800;
 }
+.nav-backdrop.visible{opacity:1;pointer-events:auto}
 
 /* =========================================================
    MIGLIORAMENTI GENERALI SMARTPHONE
@@ -376,6 +256,7 @@ table.albo-table tbody tr.rank-bronze td:first-child {
   }
 
   .nav-toggle {
+    display: flex;
     flex-shrink: 0;
     background: rgba(255, 255, 255, 0.12);
   }
@@ -385,21 +266,40 @@ table.albo-table tbody tr.rank-bronze td:first-child {
   }
 
   .nav-links {
-    top: 66px;
-    left: 1rem;
-    right: 1rem;
-    padding: 0.85rem;
-    border-radius: 14px;
-    background: linear-gradient(180deg, #1f4f86, #92342b);
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
-  }
+  display: none;
+  position: fixed;
+  top: 66px;
+  left: 1rem;
+  right: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.85rem;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #1f4f86, #92342b);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
+  z-index: 49;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleY(0.95);
+  transition: max-height 0.28s ease, opacity 0.28s ease, transform 0.28s ease;
+}
 
-  .nav-links a {
-    display: block;
-    font-size: 1rem;
-    padding: 0.85rem 1rem;
-  }
+.nav-links.open {
+  display: flex;
+  max-height: 420px;
+  opacity: 1;
+  transform: scaleY(1);
+}
 
+.nav-links a {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
 
   /* Hero e sezioni */
   .hero {
