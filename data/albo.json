@@ -78,11 +78,11 @@
     { "pos": 3, "name": "---", "note": "" }
   ],
   "2025": [
-    { "pos": 1, "name": "---", "note": "92/100" },
-    { "pos": 2, "name": "---", "note": "89/100" }
+    { "pos": 1, "name": "---", "note": "" },
+    { "pos": 2, "name": "---", "note": "" }
   ],
   "2024": [
-    { "pos": 1, "name": "---", "note": "90/100" }
+    { "pos": 1, "name": "---", "note": "" }
   ]
   },
   "Canzoniere - Coreografia": {
@@ -92,11 +92,11 @@
     { "pos": 3, "name": "---", "note": "" }
   ],
   "2025": [
-    { "pos": 1, "name": "---", "note": "92/100" },
-    { "pos": 2, "name": "---", "note": "89/100" }
+    { "pos": 1, "name": "---", "note": "" },
+    { "pos": 2, "name": "---", "note": "" }
   ],
   "2024": [
-    { "pos": 1, "name": "---", "note": "90/100" }
+    { "pos": 1, "name": "---", "note": "" }
   ]
   },
   "Calcetto": {
@@ -107,7 +107,7 @@
     { "pos": 4, "name": "Vignali", "note": "" }
   ],
   "2025": [
-    { "pos": 1, "name": "---", "note": "Finale 2-0" },
+    { "pos": 1, "name": "---", "note": "" },
     { "pos": 2, "name": "---", "note": "" }
   ],
   "2024": [
@@ -116,13 +116,13 @@
   },
   "Pallavolo": {
    "2026": [
-    { "pos": 1, "name": "Strinciöl", "note": "" },
-    { "pos": 2, "name": "Teren de Süra", "note": "" },
-    { "pos": 3, "name": "Bravi", "note": "" },
-    { "pos": 4, "name": "Vignali", "note": "" }
+    { "pos": 1, "name": "", "note": "" },
+    { "pos": 2, "name": "", "note": "" },
+    { "pos": 3, "name": "", "note": "" },
+    { "pos": 4, "name": "", "note": "" }
   ],
   "2025": [
-    { "pos": 1, "name": "---", "note": "Finale 2-0" },
+    { "pos": 1, "name": "---", "note": "" },
     { "pos": 2, "name": "---", "note": "" }
   ],
   "2024": [
@@ -131,13 +131,13 @@
   },
   "Bocce": {
    "2026": [
-    { "pos": 1, "name": "Strinciöl", "note": "" },
-    { "pos": 2, "name": "Teren de Süra", "note": "" },
-    { "pos": 3, "name": "Bravi", "note": "" },
-    { "pos": 4, "name": "Vignali", "note": "" }
+    { "pos": 1, "name": "", "note": "" },
+    { "pos": 2, "name": "", "note": "" },
+    { "pos": 3, "name": "", "note": "" },
+    { "pos": 4, "name": "", "note": "" }
   ],
   "2025": [
-    { "pos": 1, "name": "---", "note": "Finale 2-0" },
+    { "pos": 1, "name": "---", "note": "" },
     { "pos": 2, "name": "---", "note": "" }
   ],
   "2024": [
@@ -146,13 +146,13 @@
   },
   "Dodgeball": {
    "2026": [
-    { "pos": 1, "name": "Strinciöl", "note": "" },
-    { "pos": 2, "name": "Teren de Süra", "note": "" },
-    { "pos": 3, "name": "Bravi", "note": "" },
-    { "pos": 4, "name": "Vignali", "note": "" }
+    { "pos": 1, "name": "", "note": "" },
+    { "pos": 2, "name": "", "note": "" },
+    { "pos": 3, "name": "", "note": "" },
+    { "pos": 4, "name": "", "note": "" }
   ],
   "2025": [
-    { "pos": 1, "name": "---", "note": "Finale 2-0" },
+    { "pos": 1, "name": "---", "note": "" },
     { "pos": 2, "name": "---", "note": "" }
   ],
   "2024": [
