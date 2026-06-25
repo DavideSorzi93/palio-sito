@@ -277,7 +277,7 @@ table.albo-table tbody tr.rank-bronze td:first-child {
   border-radius: 14px;
   background: linear-gradient(180deg, #1f4f86, #92342b);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
-  z-index: 49;
+  z-index: 1001;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -777,11 +777,14 @@ table.albo-table tbody tr.rank-bronze td:first-child {
 
   .hero-home {
     min-height: auto;
-    background:
-      linear-gradient(135deg, rgba(43, 108, 176, 0.95), rgba(231, 76, 60, 0.9));
+    background: linear-gradient(
+      135deg,
+      rgba(43, 108, 176, 0.95),
+      rgba(231, 76, 60, 0.9)
+    );
   }
-   
-.hero-home::after {
+
+  .hero-home::after {
     width: 220px;
     height: 220px;
     right: -70px;
@@ -789,7 +792,7 @@ table.albo-table tbody tr.rank-bronze td:first-child {
     opacity: 0.10;
   }
 
-     .hero-home .hero-content {
+  .hero-home .hero-content {
     padding: 2rem 1rem;
   }
 
@@ -830,3 +833,4 @@ table.albo-table tbody tr.rank-bronze td:first-child {
     transform: none;
   }
 }
+
