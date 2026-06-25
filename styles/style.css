@@ -244,3 +244,31 @@ table.albo-table td:nth-child(3) {
   .nav-links,.btn{display:none}
   .albo-section{box-shadow:none;border:none}
 }
+
+/* Colori podio */
+table.albo-table tbody tr.rank-gold {
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.18), #ffffff);
+}
+
+table.albo-table tbody tr.rank-silver {
+  background: linear-gradient(90deg, rgba(192, 192, 192, 0.22), #ffffff);
+}
+
+table.albo-table tbody tr.rank-bronze {
+  background: linear-gradient(90deg, rgba(205, 127, 50, 0.20), #ffffff);
+}
+
+table.albo-table tbody tr.rank-gold td:first-child {
+  color: #b8860b;
+  font-weight: 800;
+}
+
+table.albo-table tbody tr.rank-silver td:first-child {
+  color: #6b7280;
+  font-weight: 800;
+}
+
+table.albo-table tbody tr.rank-bronze td:first-child {
+  color: #92400e;
+  font-weight: 800;
+}
