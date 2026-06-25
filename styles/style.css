@@ -898,3 +898,8 @@ table.albo-table tbody tr.year-separator:first-child td {
 }
 
 
+table.albo-table thead th:first-child,
+table.albo-table tbody tr:not(.year-separator) td:first-child {
+  display: none;
+}
+
