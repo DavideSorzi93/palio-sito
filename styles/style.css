@@ -903,3 +903,10 @@ table.albo-table tbody tr:not(.year-separator) td:first-child {
   display: none;
 }
 
+
+@media (max-width: 720px) {
+  table.albo-table tbody tr:not(.year-separator) td:first-child {
+    display: none;
+  }
+}
+
