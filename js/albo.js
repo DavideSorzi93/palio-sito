@@ -169,27 +169,39 @@ function renderTable() {
     return;
   }
 
-  filtered.forEach(r => {
+  
+   filtered.forEach(r => {
     const tr = document.createElement('tr');
-
+  
+    const posizione = Number(r.pos);
+  
+    if (posizione === 1) {
+      tr.classList.add('rank-gold');
+    } else if (posizione === 2) {
+      tr.classList.add('rank-silver');
+    } else if (posizione === 3) {
+      tr.classList.add('rank-bronze');
+    }
+  
     const tdPos = document.createElement('td');
     tdPos.setAttribute('data-label', 'Posizione');
     tdPos.textContent = r.pos || '';
-
+  
     const tdName = document.createElement('td');
     tdName.setAttribute('data-label', 'Nome');
     tdName.textContent = r.name || '';
-
+  
     const tdNote = document.createElement('td');
     tdNote.setAttribute('data-label', 'Note');
     tdNote.textContent = r.note || '';
-
+  
     tr.appendChild(tdPos);
     tr.appendChild(tdName);
     tr.appendChild(tdNote);
-
+  
     tbody.appendChild(tr);
   });
+  
 }
   
   // Event handlers
