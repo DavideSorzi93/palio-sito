@@ -74,54 +74,7 @@
     sel.value = years[0] || '';
     onYearChange();
   }
-
-  // Rendering tabella in base a filtro/ordinamento
-  /*function renderTable() {
-    const tbody = document.querySelector('#albo-table tbody');
-    if (!tbody) return;
-    tbody.innerHTML = '';
-    if (!currentEvent || !currentYear) {
-      tbody.innerHTML = '<tr><td colspan="3">Seleziona un evento e un anno</td></tr>';
-      return;
-    }
-    const rows = (ALBO_DATA[currentEvent] && ALBO_DATA[currentEvent][currentYear]) ? [...ALBO_DATA[currentEvent][currentYear]] : [];
-    const searchEl = document.getElementById('search-input');
-    const search = searchEl ? (searchEl.value || '').trim().toLowerCase() : '';
-
-    // filtro
-    const filtered = rows.filter(r => {
-      if (!search) return true;
-      const text = `${r.name} ${r.note || ''} ${r.pos || ''}`.toLowerCase();
-      return text.includes(search);
-    });
-
-    // ordinamento per posizione
-    filtered.sort((a,b) => {
-      const pa = Number(a.pos) || 0;
-      const pb = Number(b.pos) || 0;
-      return sortAsc ? pa - pb : pb - pa;
-    });
-
-    if (!filtered.length) {
-      tbody.innerHTML = '<tr><td colspan="3">Nessun risultato</td></tr>';
-      return;
-    }
-
-    filtered.forEach(r => {
-      const tr = document.createElement('tr');
-      const tdPos = document.createElement('td');
-      tdPos.textContent = r.pos || '';
-      const tdName = document.createElement('td');
-      tdName.textContent = r.name || '';
-      const tdNote = document.createElement('td');
-      tdNote.textContent = r.note || '';
-      tr.appendChild(tdPos);
-      tr.appendChild(tdName);
-      tr.appendChild(tdNote);
-      tbody.appendChild(tr);
-    });
-  }
- */
+  
   // Rendering tabella in base a filtro/ordinamento
 function renderTable() {
   const tbody = document.querySelector('#albo-table tbody');
