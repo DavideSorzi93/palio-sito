@@ -11,7 +11,13 @@
     "Vignali": "../assets/stemmi/vignali-stemma.png",
     "Bravi": "../assets/stemmi/bravi-stemma.png", 
     "Casolini": "../assets/stemmi/casolini-stemma.png",
-    "Castegnate": "../assets/stemmi/castegnate-stemma.png"
+    "Castegnate": "../assets/stemmi/castegnate-stemma.png",
+    "Carvisi": "../assets/stemmi/carvisi-stemma.png",
+    "Mercato": "../assets/stemmi/mercato-stemma.png",
+    "Teren de Süra": "../assets/stemmi/terendesura-stemma.png",
+    "Strinciöl": "../assets/stemmi/strinciol-stemma.png",
+    "Tesone": "../assets/stemmi/tesone-stemma.png",
+    "Stazione": "../assets/stemmi/stazione-stemma.png"
   };
   
   // Utility per download file client-side
