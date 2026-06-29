@@ -7,7 +7,10 @@
   let sortAsc = true;
 
   const stemmiContrade = {
-    "Vignali": "../assets/stemmi/vignali-stemma.png"
+    "Vignali": "../assets/stemmi/vignali-stemma.png",
+    "Bravi": "../assets/stemmi/bravi-stemma.png", 
+    "Casolini": "../assets/stemmi/casolini-stemma.png",
+    "Castegnate": "../assets/stemmi/castegnate-stemma.png"
   };
   
   // Utility per download file client-side
