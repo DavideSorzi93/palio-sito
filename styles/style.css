@@ -967,15 +967,19 @@ table.albo-table tbody tr:not(.year-separator) td:nth-child(4) .note-text {
   }
 }
 
+/* =========================================================
+   STEMMA CONTRADA ACCANTO AL NOME
+   ========================================================= */
 
 .nome-cell {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .nome-con-stemma {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  max-width: 100%;
 }
 
 .stemma-contrada {
@@ -986,17 +990,42 @@ table.albo-table tbody tr:not(.year-separator) td:nth-child(4) .note-text {
 }
 
 .nome-evidenziato {
-  color: #5a1a1a;
-  font-weight: 700;
+  color: var(--dark-color);
+  font-weight: 900;
+  line-height: 1.2;
 }
 
-@media (max-width: 768px) {
+/* Hover desktop */
+table.albo-table tbody tr:not(.year-separator):hover .nome-evidenziato {
+  color: var(--primary-color);
+}
+
+/* Smartphone */
+@media (max-width: 720px) {
+
+  table.albo-table tbody tr:not(.year-separator) td.nome-cell {
+    align-items: center;
+  }
+
+  table.albo-table tbody tr:not(.year-separator) td.nome-cell::before {
+    color: var(--primary-color);
+    font-weight: 900;
+  }
+
+  .nome-con-stemma {
+    justify-content: flex-end;
+    text-align: right;
+    gap: 7px;
+  }
+
   .stemma-contrada {
     width: 24px;
     height: 24px;
   }
 
-  .nome-con-stemma {
-    gap: 6px;
+  .nome-evidenziato {
+    font-size: 1.08rem;
+    font-weight: 900;
   }
 }
+
