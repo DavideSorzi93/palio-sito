@@ -183,9 +183,15 @@
       tdName.textContent = r.name || '';
 
       // Colonna Note
+      
       const tdNote = document.createElement('td');
       tdNote.setAttribute('data-label', 'Note');
-      tdNote.textContent = r.note || '';
+
+      const noteSpan = document.createElement('span');
+      noteSpan.classList.add('note-text');
+      noteSpan.textContent = r.note || '';
+
+      tdNote.appendChild(noteSpan);
 
       tr.appendChild(tdYear);
       tr.appendChild(tdPos);
