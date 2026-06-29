@@ -45,9 +45,7 @@
   },
   "Canzoniere - Canzone": {
     "1985": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
     ],
     "1986": [
       {"pos": 1, "name": "Stazione", "note": ""},
@@ -55,9 +53,7 @@
       {"pos": 3, "name": "---", "note": ""}
     ],
      "1987": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
     ],
     "1988": [
       {"pos": 1, "name": "Strinciöl", "note": ""},
@@ -65,9 +61,7 @@
       {"pos": 3, "name": "---", "note": ""}
     ],
     "1989": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
     ],
     "1990": [
       {"pos": 1, "name": "Strinciöl", "note": ""},
@@ -90,9 +84,7 @@
       {"pos": 3, "name": "---", "note": ""}
     ],
     "1994": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
     ],
     "1995": [
       {"pos": 1, "name": "Strinciöl", "note": ""},
@@ -125,9 +117,7 @@
       {"pos": 3, "name": "---", "note": ""}
     ],
      "2001": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
     ],
     "2002": [
       {"pos": 1, "name": "Strinciöl", "note": ""},
@@ -220,14 +210,10 @@
       {"pos": 3, "name": "---", "note": ""}
     ],
     "2020": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
     ],
     "2021": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
     ],
     "2022": [
       {"pos": 1, "name": "Teren de Süra", "note": ""},
