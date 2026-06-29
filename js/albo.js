@@ -6,6 +6,10 @@
   let currentEvent = null;
   let sortAsc = true;
 
+  const stemmiContrade = {
+    "Vignali": "../assets/stemmi/vignali-stemma.png"
+  };
+  
   // Utility per download file client-side
   function downloadBlob(filename, content, type = 'application/json') {
     const blob = new Blob([content], { type });
@@ -137,6 +141,9 @@
 
     let lastYear = null;
 
+        
+    
+    
     filtered.forEach(r => {
       // Inserisce una riga separatrice ogni volta che cambia l'anno
       if (r.year !== lastYear) {
@@ -152,7 +159,7 @@
 
         lastYear = r.year;
       }
-
+            
       // Riga normale del risultato
       const tr = document.createElement('tr');
 
@@ -177,10 +184,29 @@
       tdPos.setAttribute('data-label', 'Posizione');
       tdPos.textContent = r.pos || '';
 
-      // Colonna Nome
+     
+      // Colonna Nome con stemma automatico
       const tdName = document.createElement('td');
       tdName.setAttribute('data-label', 'Nome');
-      tdName.textContent = r.name || '';
+      tdName.classList.add('nome-cell');
+      
+      const nomeWrapper = document.createElement('span');
+      nomeWrapper.classList.add('nome-con-stemma');
+      
+      const stemmaImg = document.createElement('img');
+      stemmaImg.classList.add('stemma-contrada');
+      stemmaImg.src = getStemmaContrada(r.name);
+      stemmaImg.alt = r.name ? `Stemma ${r.name}` : 'Stemma contrada';
+      
+      const nomeSpan = document.createElement('span');
+      nomeSpan.classList.add('nome-evidenziato');
+      nomeSpan.textContent = r.name || '';
+      
+      nomeWrapper.appendChild(stemmaImg);
+      nomeWrapper.appendChild(nomeSpan);
+      
+      tdName.appendChild(nomeWrapper);
+
 
       // Colonna Note
       
@@ -430,7 +456,15 @@
         }
       });
   }
-
+  
+  function getStemmaContrada(nome) {
+    if (!nome) {
+      return "../assets/stemmi/default.png";
+    }
+  
+    return stemmiContrade[nome] || "../assets/stemmi/default.png";
+  }
+  
   // API pubbliche
   window.initAlboPage = initAlboPage;
   window.initEventPage = initEventPage;
