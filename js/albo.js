@@ -7,6 +7,7 @@
   let sortAsc = true;
 
   const stemmiContrade = {
+    "NON ASSEGNATO": "../assets/stemmi/non-assegnato-stemma.png",
     "Vignali": "../assets/stemmi/vignali-stemma.png",
     "Bravi": "../assets/stemmi/bravi-stemma.png", 
     "Casolini": "../assets/stemmi/casolini-stemma.png",
