@@ -145,7 +145,7 @@
 
         const yearCell = document.createElement('td');
         yearCell.setAttribute('colspan', '4');
-        yearCell.textContent = `Anno ${r.year}`;
+        yearCell.textContent = `${r.year}`;
 
         yearRow.appendChild(yearCell);
         tbody.appendChild(yearRow);
