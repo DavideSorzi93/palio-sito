@@ -947,3 +947,22 @@ table.albo-table tbody tr:not(.year-separator):hover td:nth-child(3) {
     font-weight: 900;
   }
 }
+
+/* Mantiene gli a capo nel campo Note */
+.note-text {
+  white-space: pre-line;
+  display: block;
+}
+
+table.albo-table tbody tr:not(.year-separator) td:nth-child(4) .note-text {
+  white-space: pre-line;
+  display: block;
+}
+
+@media (max-width: 720px) {
+  table.albo-table tbody tr:not(.year-separator) td:nth-child(4) .note-text {
+    white-space: pre-line;
+    text-align: right;
+    display: block;
+  }
+}
