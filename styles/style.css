@@ -966,3 +966,37 @@ table.albo-table tbody tr:not(.year-separator) td:nth-child(4) .note-text {
     display: block;
   }
 }
+
+
+.nome-cell {
+  font-weight: 700;
+}
+
+.nome-con-stemma {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stemma-contrada {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.nome-evidenziato {
+  color: #5a1a1a;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .stemma-contrada {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nome-con-stemma {
+    gap: 6px;
+  }
+}
