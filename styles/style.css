@@ -20,20 +20,27 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background: var(--light-color);
+    background:
+      linear-gradient(rgba(243,234,210,0.92), rgba(243,234,210,0.92)),
+      url("../assets/pergamena.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* NAVIGAZIONE */
 .navbar {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    background: linear-gradient(
+        135deg,
+        #4a2f12,
+        #7b4a1a
+    );
+
+    border-bottom: 3px solid #d4af37;
+
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
 .navbar .container {
@@ -98,9 +105,23 @@ h1,h2,h3{color:var(--dark-color)}
 .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
 .feature-card{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(2,6,23,0.06)}
 
-.footer{background:var(--dark-color);color:#fff;padding:1rem 0;margin-top:2rem}
+.footer{
+  background: #2a1807;
+  color: #f6e7b5;
+  border-top: 3px solid #d4af37;
+}
+
 .footer .container{display:flex;justify-content:space-between;align-items:center}
 .footer-links{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+
+.footer a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff7d6;
+}
 
 /* ALBO SPECIFIC */
 .albo-section{background:#fff;padding:1rem;border-radius:8px;margin:1rem 0;box-shadow:0 1px 3px rgba(2,6,23,0.04)}
@@ -195,11 +216,22 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
 @media (max-width: 720px) {
 
   /* Layout generale */
-  body {
-    font-size: 16px;
-    line-height: 1.55;
-    background: #f4f6f8;
-  }
+  
+   body {
+       font-size: 16px;
+       line-height: 1.55;
+   
+       background:
+         linear-gradient(
+           rgba(243,234,210,0.95),
+           rgba(243,234,210,0.95)
+         ),
+         url("../assets/pergamena.jpg");
+   
+       background-size: cover;
+       background-attachment: scroll;
+     }
+
 
   .container {
     width: 100%;
@@ -280,8 +312,13 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.85rem;
-  border-radius: 14px;
-  background: linear-gradient(180deg, #1f4f86, #92342b);
+  border-radius: 14px;  
+  background: linear-gradient(
+    180deg,
+    #4a2f12,
+    #7b4a1a
+  );
+  border: 2px solid #d4af37;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
   z-index: 1001;
   max-height: 0;
@@ -414,7 +451,7 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
     margin: 0 0 1rem;
     padding: 1rem;
     border-radius: 18px;
-    background: #ffffff;
+    background: #f8f1df;
     box-shadow: 0 7px 18px rgba(15, 23, 42, 0.10);
     border-left: 6px solid var(--primary-color);
   }
@@ -591,8 +628,13 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
   align-items: center;
   position: relative;
   overflow: hidden;
-  color: #fff;
-  background: linear-gradient(135deg, #2b6cb0 0%, #e74c3c 100%);
+  color: #fff;  
+   background: linear-gradient(
+       135deg,
+       #4a2f12,
+       #7b4a1a
+     );
+  border-bottom: 4px solid #d4af37;
   padding: 0;
   margin-bottom: 2rem;
 }
@@ -658,7 +700,11 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
 }
 
 .btn-primary {
-  background: var(--primary-color);
+  background: linear-gradient(
+    180deg,
+    #b8860b,
+    #8b6508
+  );
   color: #fff;
 }
 
@@ -727,8 +773,13 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
   align-items: center;
   margin: 2rem 0;
   padding: 1.5rem;
-  border-radius: 20px;
-  background: linear-gradient(135deg, #0b1220, #1e3a5f);
+  border-radius: 20px;  
+   background: linear-gradient(
+    135deg,
+    #4a2f12,
+    #7b4a1a
+  );
+  border: 2px solid #d4af37;
   color: #fff;
 }
 
@@ -780,15 +831,17 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
    ========================================================= */
 
 @media (max-width: 720px) {
-
-  .hero-home {
-    min-height: auto;
-    background: linear-gradient(
-      135deg,
-      rgba(43, 108, 176, 0.95),
-      rgba(231, 76, 60, 0.9)
-    );
-  }
+  
+   .hero-home {
+     min-height: auto;
+     background: linear-gradient(
+       135deg,
+       #4a2f12,
+       #7b4a1a
+     );
+   
+     border-bottom: 4px solid #d4af37;
+   }
 
   .hero-home::after {
     width: 220px;
@@ -840,18 +893,20 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
   }
 }
 
-
 table.albo-table tr.year-separator td {
-  background: linear-gradient(135deg, var(--dark-color), #1e3a5f);
-  color: #fff3c4;
+  background: linear-gradient(
+    135deg,
+    #3a2410,
+    #6c4118
+  );
+
+  color: #f6e7b5;
+
+  border-top: 2px solid #d4af37;
+  border-bottom: 2px solid #d4af37;
+
   font-family: 'Cinzel', Georgia, serif;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 0.75rem 1rem;
-  border-bottom: none;
-  border-top: 1.25rem solid #fff;
-  text-align: left;
+  font-size: 1.05rem;
 }
 
 @media (max-width: 720px) {
@@ -870,8 +925,12 @@ table.albo-table tr.year-separator td {
     width: 100%;
     margin: 0;
     padding: 0.8rem 1rem;
-    border-radius: 14px;
-    background: linear-gradient(135deg, var(--dark-color), #1e3a5f);
+    border-radius: 14px;    
+    background: linear-gradient(
+     135deg,
+     #3a2410,
+     #6c4118
+    );
     color: #fff3c4;
     font-family: 'Cinzel', Georgia, serif;
     font-weight: 800;
@@ -1036,3 +1095,82 @@ table.albo-table tbody tr:not(.year-separator):hover .nome-evidenziato {
   }
 }
 
+/* =========================================================
+   TEMA MEDIEVALE
+   ========================================================= */
+
+.navbar {
+  background: linear-gradient(
+    135deg,
+    #4a2f12,
+    #7b4a1a
+  ) !important;
+
+  border-bottom: 3px solid #d4af37;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Cinzel', Georgia, serif;
+  color: #5a3b12;
+}
+
+.albo-section,
+.feature-card,
+.intro-section,
+.cta-section 
+{
+  background: #f8f1df !important;
+  border: 2px solid #c9aa6a;
+  box-shadow: 0 3px 10px rgba(90,59,18,.15);
+}
+
+
+.btn {
+  background: linear-gradient(
+    180deg,
+    #b8860b,
+    #8b6508
+  );
+
+  border: 1px solid #5a3b12;
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    180deg,
+    #d4af37,
+    #b8860b
+  );
+}
+
+
+.nome-evidenziato {
+  color: #5a3b12;
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.albo-section,
+.intro-section,
+.feature-card,
+.cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.albo-section::before,
+.intro-section::before,
+.feature-card::before,
+.cta-section::before {
+  content: "✦";
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  color: rgba(212, 175, 55, 0.25);
+  font-size: 1.3rem;
+}
