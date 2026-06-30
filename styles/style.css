@@ -1192,3 +1192,16 @@ h3 {
   z-index: 5001;
 }
 
+
+h3 a {
+  color: #b8860b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  color: #d4af37;
+  text-decoration: underline;
+}
+
+
