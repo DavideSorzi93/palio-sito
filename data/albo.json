@@ -227,8 +227,8 @@
     ],
     "2024": [
       {"pos": 1, "name": "Castegnate", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 2, "name": "Stazione", "note": ""},
+      {"pos": 3, "name": "Teren de Süra", "note": ""}
     ],
     "2025": [
       {"pos": 1, "name": "Bravi", "note": "Un palio in allegria (Balorda Nostalgia)"},
@@ -243,9 +243,9 @@
   },
   "Canzoniere - Coreografia": {
     "2024": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""}
+      {"pos": 1, "name": "Teren de Süra", "note": ""},
+      {"pos": 2, "name": "Castegnate", "note": ""},
+      {"pos": 3, "name": "Parimerito: Stazione e Strinciöl", "note": ""}
     ],
     "2025": [
       {"pos": 1, "name": "Castegnate", "note": "Questo è il palio (Country Roads)"},
@@ -308,7 +308,7 @@
       {"pos": 4, "name": "", "note": ""}
     ],
     "2024": [
-      {"pos": 1, "name": "", "note": ""},
+      {"pos": 1, "name": "Bravi", "note": ""},
       {"pos": 2, "name": "", "note": ""},
       {"pos": 3, "name": "", "note": ""},
       {"pos": 4, "name": "", "note": ""}
@@ -328,7 +328,7 @@
   },
   "Pallavolo": {
     "2024": [
-      {"pos": 1, "name": "", "note": ""},
+      {"pos": 1, "name": "Stazione", "note": ""},
       {"pos": 2, "name": "", "note": ""},
       {"pos": 3, "name": "", "note": ""},
       {"pos": 4, "name": "", "note": ""}
@@ -348,7 +348,7 @@
   },
   "Bocce": {
     "2024": [
-      {"pos": 1, "name": "", "note": ""},
+      {"pos": 1, "name": "Stazione", "note": ""},
       {"pos": 2, "name": "", "note": ""},
       {"pos": 3, "name": "", "note": ""},
       {"pos": 4, "name": "", "note": ""}
