@@ -380,10 +380,9 @@
       {"pos": 4, "name": "", "note": ""}
     ],
     "2026": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
+      {"pos": 1, "name": "Casolini", "note": ""},
+      {"pos": 2, "name": "Strinciöl", "note": ""},
+      {"pos": 3, "name": "Teren de Süra", "note": ""}
     ]
   }
 }
