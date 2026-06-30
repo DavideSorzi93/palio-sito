@@ -236,7 +236,7 @@
       {"pos": 3, "name": "Mercato", "note": "Il mercato c’è (Pretty fly)"}
     ],
     "2026": [
-      {"pos": 1, "name": "Vignali", "note": "Maiali"},
+      {"pos": 1, "name": "Vignali", "note": ""},
       {"pos": 2, "name": "Bravi",     "note": ""      },
       {"pos": 3, "name": "Mercato",     "note": ""      }
     ]
@@ -253,7 +253,7 @@
       {"pos": 3, "name": "Teren de Süra", "note": "Giallo e nero (Medley Gipsy King)"}
     ],
     "2026": [
-      {"pos": 1, "name": "Mercato", "note": "Drogato"},
+      {"pos": 1, "name": "Mercato", "note": ""},
       {"pos": 2, "name": "Teren de Süra",     "note": ""       },
       {"pos": 3, "name": "Parimerito: Vignali e Castegnate",     "note": ""       }
     ]
@@ -323,7 +323,7 @@
       {"pos": 1, "name": "Strinciöl",     "note": "Risultato: 5-4\nMotta esulta"},
       {"pos": 2, "name": "Teren de Süra", "note": "Risultato: 5-4\nLongo muto"},
       {"pos": 3, "name": "Bravi",         "note": ""},
-      {"pos": 4, "name": "Vignali",       "note": "Maiali"}
+      {"pos": 4, "name": "Vignali",       "note": ""}
     ]
   },
   "Pallavolo": {
