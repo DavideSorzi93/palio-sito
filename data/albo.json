@@ -222,8 +222,8 @@
     ],
     "2023": [
       {"pos": 1, "name": "Bravi", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 2, "name": "Carvisi", "note": ""},
+      {"pos": 3, "name": "Mercato", "note": ""}
     ],
     "2024": [
       {"pos": 1, "name": "Castegnate", "note": ""},
@@ -242,6 +242,11 @@
     ]
   },
   "Canzoniere - Coreografia": {
+     "2023": [
+      {"pos": 1, "name": "Castegnate", "note": ""},
+      {"pos": 2, "name": "", "note": ""},
+      {"pos": 3, "name": "", "note": ""}
+    ],
     "2024": [
       {"pos": 1, "name": "Teren de Süra", "note": ""},
       {"pos": 2, "name": "Castegnate", "note": ""},
@@ -302,9 +307,9 @@
       {"pos": 4, "name": "", "note": ""}
     ],
     "2023": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
+      {"pos": 1, "name": "Teren de Süra", "note": ""},
+      {"pos": 2, "name": "Strinciöl", "note": ""},
+      {"pos": 3, "name": "Carvisi", "note": ""},
       {"pos": 4, "name": "", "note": ""}
     ],
     "2024": [
@@ -327,6 +332,12 @@
     ]
   },
   "Pallavolo": {
+    "2023": [
+      {"pos": 1, "name": "Stazione", "note": ""},
+      {"pos": 2, "name": "Carvisi", "note": ""},
+      {"pos": 3, "name": "Castegnate", "note": ""},
+      {"pos": 4, "name": "", "note": ""}
+    ],
     "2024": [
       {"pos": 1, "name": "Stazione", "note": ""},
       {"pos": 2, "name": "", "note": ""},
