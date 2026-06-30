@@ -10,7 +10,7 @@
     "NON ASSEGNATO": "../assets/stemmi/non-assegnato-stemma.png",
     "Vignali": "../assets/stemmi/vignali-stemma.png",
     "Bravi": "../assets/stemmi/bravi-stemma.png", 
-    "Casolini": "../assets/stemmi/casolini-stemma-test.png",
+    "Casolini": "../assets/stemmi/casolini-stemma.png",
     "Castegnate": "../assets/stemmi/castegnate-stemma.png",
     "Carvisi": "../assets/stemmi/carvisi-stemma.png",
     "Mercato": "../assets/stemmi/mercato-stemma.png",
