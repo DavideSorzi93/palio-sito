@@ -96,8 +96,14 @@ body {
 .btn{display:inline-block;padding:.5rem .75rem;border-radius:6px;border:0;background:var(--primary-color);color:#fff;text-decoration:none;cursor:pointer}
 
 .btn.secondary {
-  background: var(--accent-color);
-  color: #fff;
+  background: linear-gradient(
+    180deg,
+    #7b4a1a,
+    #4a2f12
+  );
+
+  border: 1px solid #d4af37;
+  color: #fff7d6;
 }
 
 h1,h2,h3{color:var(--dark-color)}
@@ -484,9 +490,9 @@ table.albo-table tbody tr.rank-bronze td:nth-child(2) {
     margin: -1rem -1rem 0.65rem -1rem;
     padding: 0.85rem 1rem;
     border-radius: 18px 18px 0 0;
-    background: rgba(43, 108, 176, 0.08);
+    background: rgba(212, 175, 55, 0.12);
     border-bottom: none;
-    color: var(--primary-color);
+    color: #5a3b12;
     font-size: 1.15rem;
     font-weight: 900;
   }
