@@ -1180,3 +1180,15 @@ h3 {
   color: rgba(212, 175, 55, 0.25);
   font-size: 1.3rem;
 }
+
+
+.albo-controls {
+  position: relative;
+  z-index: 5000;
+}
+
+#event-select {
+  position: relative;
+  z-index: 5001;
+}
+
