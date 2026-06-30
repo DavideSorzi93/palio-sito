@@ -39,9 +39,9 @@
     "2021": [ {"pos": 1, "name": "NON ASSEGNATO",        "note": "Causa Covid"             } ],
     "2022": [ {"pos": 1, "name": "Mercato",        "note": "Fantino: Matteo Centurelli"             } ],
     "2023": [ {"pos": 1, "name": "Castegnate",        "note": "Fantino: Davide Boroni"  } ],
-    "2024": [ {"pos": 1, "name": "Castegnate", "note": "Fantino: Davide Boroni"} ],
-    "2025": [ {"pos": 1, "name": "Castegnate", "note": "Fantino: Davide Boroni"} ],
-    "2026": [ {"pos": 1, "name": "Castegnate", "note": "Fantino: Davide Boroni\nNumero giri: 5"} ]
+    "2024": [ {"pos": 1, "name": "Castegnate", "note": "Fantino: Davide Boroni\nAsino: Dolly"} ],
+    "2025": [ {"pos": 1, "name": "Castegnate", "note": "Fantino: Davide Boroni\nAsino: Dolly"} ],
+    "2026": [ {"pos": 1, "name": "Castegnate", "note": "Fantino: Davide Boroni\nAsino: \nNumero giri: 5"} ]
   },
   "Canzoniere - Canzone": {
     "1985": [
