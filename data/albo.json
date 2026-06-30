@@ -231,9 +231,9 @@
       {"pos": 3, "name": "---", "note": ""}
     ],
     "2025": [
-      {"pos": 1, "name": "Bravi", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
+      {"pos": 1, "name": "Bravi", "note": "Un palio in allegria (Balorda Nostalgia)"},
+      {"pos": 2, "name": "Teren de Süra", "note": "Giallo e nero (Medley Gipsy King)"},
+      {"pos": 3, "name": "Mercato", "note": "Il mercato c’è (Pretty fly)"}
     ],
     "2026": [
       {"pos": 1, "name": "Vignali", "note": "Maiali"},
@@ -248,9 +248,9 @@
       {"pos": 3, "name": "", "note": ""}
     ],
     "2025": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""}
+      {"pos": 1, "name": "Castegnate", "note": "Questo è il palio (Country Roads)"},
+      {"pos": 2, "name": "Stazione", "note": "Tutti qui! (This is me"},
+      {"pos": 3, "name": "Teren de Süra", "note": "Giallo e nero (Medley Gipsy King)"}
     ],
     "2026": [
       {"pos": 1, "name": "Mercato", "note": "Drogato"},
