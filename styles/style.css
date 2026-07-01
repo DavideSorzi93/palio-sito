@@ -1254,9 +1254,9 @@ td[data-label="Posizione"] {
 
   /* Note */
   
+   
    td[data-label="Note"] {
-     display: flex !important;
-     justify-content: center !important;
+     display: block !important;
      text-align: center !important;
      padding-top: 0.5rem;
    }
@@ -1264,9 +1264,10 @@ td[data-label="Posizione"] {
    .note-text {
      display: block;
      width: 100%;
-     text-align: center;
+     text-align: center !important;
      line-height: 1.5;
    }
+
 
 }
 
