@@ -1027,7 +1027,7 @@ table.albo-table tbody tr:not(.year-separator) td:nth-child(4) .note-text {
 @media (max-width: 720px) {
   table.albo-table tbody tr:not(.year-separator) td:nth-child(4) .note-text {
     white-space: pre-line;
-    text-align: right;
+    text-align: left;
     display: block;
   }
 }
@@ -1207,29 +1207,54 @@ h3 a:hover {
 
 @media (max-width: 720px) {
 
-  /* Nasconde l'etichetta "Nome" */
-  td.nome-cell::before {
-    content: none !important;
-    display: none !important;
-  }
-
-  /* Nasconde l'etichetta "Note" */
+  /* Nasconde le etichette Nome, Posizione e Note */
+  td.nome-cell::before,
+  td[data-label="Posizione"]::before,
   td[data-label="Note"]::before {
     content: none !important;
     display: none !important;
   }
-}
 
-@media (max-width: 720px) {
+  /* Posizione */
+  td[data-label="Posizione"] {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-bottom: none;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.35rem;
+  }
 
-  td.nome-cell,
+  /* Nome */
+  td.nome-cell {
+    justify-content: center;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  td.nome-cell .nome-con-stemma {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nome-evidenziato {
+    font-size: 1.15rem;
+  }
+
+  /* Note */
   td[data-label="Note"] {
-    justify-content: flex-end;
+    display: block;
+    text-align: left;
+    padding-top: 0.5rem;
   }
 
   .note-text {
+    display: block;
     width: 100%;
-    text-align: right;
+    text-align: left;
+    line-height: 1.5;
   }
 }
+
 
