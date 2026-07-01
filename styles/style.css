@@ -1253,18 +1253,21 @@ td[data-label="Posizione"] {
   }
 
   /* Note */
-  td[data-label="Note"] {
-    display: block;
-    text-align: left;
-    padding-top: 0.5rem;
-  }
+  
+   td[data-label="Note"] {
+     display: flex !important;
+     justify-content: center !important;
+     text-align: center !important;
+     padding-top: 0.5rem;
+   }
+   
+   .note-text {
+     display: block;
+     width: 100%;
+     text-align: center;
+     line-height: 1.5;
+   }
 
-  .note-text {
-    display: block;
-    width: 100%;
-    text-align: left;
-    line-height: 1.5;
-  }
 }
 
 
