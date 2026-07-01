@@ -1205,3 +1205,31 @@ h3 a:hover {
 }
 
 
+@media (max-width: 720px) {
+
+  /* Nasconde l'etichetta "Nome" */
+  td.nome-cell::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* Nasconde l'etichetta "Note" */
+  td[data-label="Note"]::before {
+    content: none !important;
+    display: none !important;
+  }
+}
+
+@media (max-width: 720px) {
+
+  td.nome-cell,
+  td[data-label="Note"] {
+    justify-content: flex-end;
+  }
+
+  .note-text {
+    width: 100%;
+    text-align: right;
+  }
+}
+
