@@ -1,404 +1,144 @@
 {
-  "Corsa degli asini": {
-    "1985": [ {"pos": 1, "name": "Casolini",        "note": ""             } ],
-    "1986": [ {"pos": 1, "name": "Bravi",        "note": ""             } ],
-    "1987": [ {"pos": 1, "name": "Tesone",        "note": ""             } ],
-    "1988": [ {"pos": 1, "name": "Bravi",        "note": ""             } ],
-    "1989": [ {"pos": 1, "name": "Strinciöl",        "note": ""             } ],
-    "1990": [ {"pos": 1, "name": "Castegnate",        "note": ""             } ],
-    "1991": [ {"pos": 1, "name": "Teren de Süra",        "note": ""             } ],
-    "1992": [ {"pos": 1, "name": "Stazione",        "note": ""             } ],
-    "1993": [ {"pos": 1, "name": "Strinciöl",        "note": ""             } ],
-    "1994": [ {"pos": 1, "name": "Bravi",        "note": ""             } ],
-    "1995": [ {"pos": 1, "name": "Casolini",        "note": ""             } ],
-    "1996": [ {"pos": 1, "name": "Teren de Süra",        "note": ""             } ],
-    "1997": [ {"pos": 1, "name": "Strinciöl",        "note": ""             } ],
-    "1998": [ {"pos": 1, "name": "Strinciöl",        "note": ""             } ],    
-    "1999": [ {"pos": 1, "name": "Stazione",        "note": ""             } ],
-    "2000": [ {"pos": 1, "name": "Teren de Süra",        "note": ""             } ],
-    "2001": [ {"pos": 1, "name": "Castegnate",        "note": ""             } ],
-    "2002": [ {"pos": 1, "name": "Strinciöl",        "note": ""             } ],
-    "2003": [ {"pos": 1, "name": "Stazione",        "note": ""             } ],
-    "2004": [ {"pos": 1, "name": "Bravi",        "note": ""             } ],
-    "2005": [ {"pos": 1, "name": "Teren de Süra",        "note": ""             } ],
-    "2006": [ {"pos": 1, "name": "Vignali",        "note": ""             } ],
-    "2007": [ {"pos": 1, "name": "Mercato",        "note": ""             } ],
-    "2008": [ {"pos": 1, "name": "Stazione",        "note": ""             } ],
-    "2009": [ {"pos": 1, "name": "Strinciöl",        "note": ""             } ],
-    "2010": [ {"pos": 1, "name": "Strinciöl",        "note": ""             } ],
-    "2011": [ {"pos": 1, "name": "Casolini",        "note": "Fantino: Maickol Panseri"             } ],
-    "2012": [ {"pos": 1, "name": "Teren de Süra",        "note": ""             } ],
-    "2013": [ {"pos": 1, "name": "Teren de Süra",        "note": ""             } ],
-    "2014": [ {"pos": 1, "name": "Teren de Süra",        "note": ""             } ],
-    "2015": [ {"pos": 1, "name": "Mercato",        "note": ""             } ],
-    "2016": [ {"pos": 1, "name": "Castegnate",        "note": ""             } ],
-    "2017": [ {"pos": 1, "name": "Strinciöl",        "note": "Fantino: Carlo Picenni"             } ],
-    "2018": [ {"pos": 1, "name": "Strinciöl",        "note": "Fantino: Carlo Picenni"             } ],
-    "2019": [ {"pos": 1, "name": "Stazione",        "note": "Fantino: Paolo Milani"             } ],
-    "2020": [ {"pos": 1, "name": "NON ASSEGNATO",        "note": "Causa Covid"             } ],
-    "2021": [ {"pos": 1, "name": "NON ASSEGNATO",        "note": "Causa Covid"             } ],
-    "2022": [ {"pos": 1, "name": "Mercato",        "note": "Fantino: Matteo Centurelli"             } ],
-    "2023": [ {"pos": 1, "name": "Castegnate",        "note": "Fantino: Davide Boroni"  } ],
-    "2024": [ {"pos": 1, "name": "Castegnate", "note": "Fantino: Davide Boroni\nAsino: Dolly"} ],
-    "2025": [ {"pos": 1, "name": "Castegnate", "note": "Fantino: Davide Boroni\nAsino: Dolly"} ],
-    "2026": [ {"pos": 1, "name": "Castegnate", "note": "Fantino: Davide Boroni\nAsino: \nNumero giri: 5"} ]
-  },
-  "Canzoniere - Canzone": {
-    "1985": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
-    ],
-    "1986": [
-      {"pos": 1, "name": "Stazione", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-     "1987": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
-    ],
-    "1988": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "1989": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
-    ],
-    "1990": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "1991": [
-      {"pos": 1, "name": "Casolini", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "1992": [
-      {"pos": 1, "name": "Casolini", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-     "1993": [
-      {"pos": 1, "name": "Mercato", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "1994": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
-    ],
-    "1995": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "1996": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "1997": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "1998": [
-      {"pos": 1, "name": "Castegnate", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "1999": [
-      {"pos": 1, "name": "Stazione", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-     "2000": [
-      {"pos": 1, "name": "Bravi", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-     "2001": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": ""}
-    ],
-    "2002": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2003": [
-      {"pos": 1, "name": "Mercato", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2004": [
-      {"pos": 1, "name": "Stazione", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2005": [
-      {"pos": 1, "name": "Teren de Süra", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2006": [
-      {"pos": 1, "name": "Teren de Süra", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2007": [
-      {"pos": 1, "name": "Vignali", "note": "Noi Vogliam l'Oratorio (Renzo Arbore)"},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2008": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2009": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2010": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2011": [
-      {"pos": 1, "name": "Stazione", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2012": [
-      {"pos": 1, "name": "Teren de Süra", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2013": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2014": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2015": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2016": [
-      {"pos": 1, "name": "Mercato", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2017": [
-      {"pos": 1, "name": "Teren de Süra", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2018": [
-      {"pos": 1, "name": "Bravi", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2019": [
-      {"pos": 1, "name": "Castegnate", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2020": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"}
-    ],
-    "2021": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"}
-    ],
-    "2022": [
-      {"pos": 1, "name": "Teren de Süra", "note": ""},
-      {"pos": 2, "name": "---", "note": ""},
-      {"pos": 3, "name": "---", "note": ""}
-    ],
-    "2023": [
-      {"pos": 1, "name": "Bravi", "note": ""},
-      {"pos": 2, "name": "Carvisi", "note": ""},
-      {"pos": 3, "name": "Mercato", "note": ""}
-    ],
-    "2024": [
-      {"pos": 1, "name": "Castegnate", "note": ""},
-      {"pos": 2, "name": "Stazione", "note": ""},
-      {"pos": 3, "name": "Teren de Süra", "note": ""}
-    ],
-    "2025": [
-      {"pos": 1, "name": "Bravi", "note": "Un palio in allegria (Balorda Nostalgia - Olly)"},
-      {"pos": 2, "name": "Teren de Süra", "note": "Giallo e nero (Medley Gipsy King)"},
-      {"pos": 3, "name": "Mercato", "note": "Il mercato c’è (Pretty fly - The Offspring)"}
-    ],
-    "2026": [
-      {"pos": 1, "name": "Vignali", "note": "Corrono gli Asini (Cammineremo ancora - Alex Garau)"},
-      {"pos": 2, "name": "Bravi",     "note": ""      },
-      {"pos": 3, "name": "Mercato",     "note": ""      }
-    ]
-  },
-  "Canzoniere - Coreografia": {
-     "2008": [
-      {"pos": 1, "name": "Vignali", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""}
-    ],
-     "2023": [
-      {"pos": 1, "name": "Castegnate", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""}
-    ],
-    "2024": [
-      {"pos": 1, "name": "Teren de Süra", "note": ""},
-      {"pos": 2, "name": "Castegnate", "note": ""},
-      {"pos": 3, "name": "Parimerito: Stazione e Strinciöl", "note": ""}
-    ],
-    "2025": [
-      {"pos": 1, "name": "Castegnate", "note": "Questo è il palio (Country Roads - John Denver)"},
-      {"pos": 2, "name": "Stazione", "note": "Tutti qui! (This is me)"},
-      {"pos": 3, "name": "Teren de Süra", "note": "Giallo e nero (Medley Gipsy King)"}
-    ],
-    "2026": [
-      {"pos": 1, "name": "Mercato", "note": ""},
-      {"pos": 2, "name": "Teren de Süra",     "note": ""       },
-      {"pos": 3, "name": "Parimerito: Vignali e Castegnate",     "note": ""       }
-    ]
-  },
-  "Calcetto": {
-    "2015": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2016": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2017": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2018": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2019": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2020": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"}
-    ],
-    "2021": [
-      {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"}
-    ],
-    "2022": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "Teren de Süra", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2023": [
-      {"pos": 1, "name": "Teren de Süra", "note": ""},
-      {"pos": 2, "name": "Strinciöl", "note": ""},
-      {"pos": 3, "name": "Carvisi", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2024": [
-      {"pos": 1, "name": "Bravi", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2025": [
-      {"pos": 1, "name": "Strinciöl", "note": ""},
-      {"pos": 2, "name": "Teren de Süra", "note": ""},
-      {"pos": 3, "name": "Castegnate", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2026": [
-      {"pos": 1, "name": "Strinciöl",     "note": "Risultato: 5-4\nAllenatore: Angelo Verga"},
-      {"pos": 2, "name": "Teren de Süra", "note": "Risultato: 5-4"},
-      {"pos": 3, "name": "Bravi",         "note": ""},
-      {"pos": 4, "name": "Vignali",       "note": ""}
-    ]
-  },
-  "Pallavolo": {
-    "2023": [
-      {"pos": 1, "name": "Stazione", "note": ""},
-      {"pos": 2, "name": "Carvisi", "note": ""},
-      {"pos": 3, "name": "Castegnate", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2024": [
-      {"pos": 1, "name": "Stazione", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2025": [
-      {"pos": 1, "name": "Castegnate", "note": ""},
-      {"pos": 2, "name": "Teren de Süra", "note": ""},
-      {"pos": 3, "name": "Stazione", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2026": [
-      {"pos": 1, "name": "Carvisi", "note": ""},
-      {"pos": 2, "name": "Castegnate",        "note": ""},
-      {"pos": 3, "name": "Bravi",        "note": ""},
-      {"pos": 4, "name": "Teren de Süra",        "note": ""}
-    ]
-  },
-  "Bocce": {
-    "2024": [
-      {"pos": 1, "name": "Stazione", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2025": [
-      {"pos": 1, "name": "Teren de Süra", "note": ""},
-      {"pos": 2, "name": "Stazione", "note": ""},
-      {"pos": 3, "name": "Strinciöl", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2026": [
-      {"pos": 1, "name": "Stazione", "note": ""},
-      {"pos": 2, "name": "Teren de Süra", "note": ""},
-      {"pos": 3, "name": "Vignali", "note": ""},
-      {"pos": 4, "name": "Bravi", "note": ""}
-    ]
-  },
-  "Dodgeball": {
-    "2024": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2025": [
-      {"pos": 1, "name": "", "note": ""},
-      {"pos": 2, "name": "", "note": ""},
-      {"pos": 3, "name": "", "note": ""},
-      {"pos": 4, "name": "", "note": ""}
-    ],
-    "2026": [
-      {"pos": 1, "name": "Casolini", "note": ""},
-      {"pos": 2, "name": "Strinciöl", "note": ""},
-      {"pos": 3, "name": "Teren de Süra", "note": ""}
-    ]
-  }
+ "Corsa degli asini": {
+  "1985": [ {"pos": 1, "name": "Casolini",      "note": ""                                               } ],
+  "1986": [ {"pos": 1, "name": "Bravi",         "note": ""                                               } ],
+  "1987": [ {"pos": 1, "name": "Tesone",        "note": ""                                               } ],
+  "1988": [ {"pos": 1, "name": "Bravi",         "note": ""                                               } ],
+  "1989": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                               } ],
+  "1990": [ {"pos": 1, "name": "Castegnate",    "note": ""                                               } ],
+  "1991": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                               } ],
+  "1992": [ {"pos": 1, "name": "Stazione",      "note": ""                                               } ],
+  "1993": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                               } ],
+  "1994": [ {"pos": 1, "name": "Bravi",         "note": ""                                               } ],
+  "1995": [ {"pos": 1, "name": "Casolini",      "note": ""                                               } ],
+  "1996": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                               } ],
+  "1997": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                               } ],
+  "1998": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                               } ],
+  "1999": [ {"pos": 1, "name": "Stazione",      "note": ""                                               } ],
+  "2000": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                               } ],
+  "2001": [ {"pos": 1, "name": "Castegnate",    "note": ""                                               } ],
+  "2002": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                               } ],
+  "2003": [ {"pos": 1, "name": "Stazione",      "note": ""                                               } ],
+  "2004": [ {"pos": 1, "name": "Bravi",         "note": ""                                               } ],
+  "2005": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                               } ],
+  "2006": [ {"pos": 1, "name": "Vignali",       "note": ""                                               } ],
+  "2007": [ {"pos": 1, "name": "Mercato",       "note": ""                                               } ],
+  "2008": [ {"pos": 1, "name": "Stazione",      "note": ""                                               } ],
+  "2009": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                               } ],
+  "2010": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                               } ],
+  "2011": [ {"pos": 1, "name": "Casolini",      "note": "Fantino: Maickol Panseri"                       } ],
+  "2012": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                               } ],
+  "2013": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                               } ],
+  "2014": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                               } ],
+  "2015": [ {"pos": 1, "name": "Mercato",       "note": ""                                               } ],
+  "2016": [ {"pos": 1, "name": "Castegnate",    "note": ""                                               } ],
+  "2017": [ {"pos": 1, "name": "Strinciöl",     "note": "Fantino: Carlo Picenni"                         } ],
+  "2018": [ {"pos": 1, "name": "Strinciöl",     "note": "Fantino: Carlo Picenni"                         } ],
+  "2019": [ {"pos": 1, "name": "Stazione",      "note": "Fantino: Paolo Milani"                          } ],
+  "2020": [ {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"                                    } ],
+  "2021": [ {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"                                    } ],
+  "2022": [ {"pos": 1, "name": "Mercato",       "note": "Fantino: Matteo Centurelli"                     } ],
+  "2023": [ {"pos": 1, "name": "Castegnate",    "note": "Fantino: Davide Boroni"                         } ],
+  "2024": [ {"pos": 1, "name": "Castegnate",    "note": "Fantino: Davide Boroni\nAsino: Dolly"           } ],
+  "2025": [ {"pos": 1, "name": "Castegnate",    "note": "Fantino: Davide Boroni\nAsino: Dolly"           } ],
+  "2026": [ {"pos": 1, "name": "Castegnate",    "note": "Fantino: Davide Boroni\nAsino: \nNumero giri: 5"} ]
+ },
+ "Canzoniere - Canzone": {
+  "1985": [ {"pos": 1, "name": "NON ASSEGNATO", "note": ""                                                   }                                                                                                                                                                               ],
+  "1986": [ {"pos": 1, "name": "Stazione",      "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1987": [ {"pos": 1, "name": "NON ASSEGNATO", "note": ""                                                   }                                                                                                                                                                               ],
+  "1988": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1989": [ {"pos": 1, "name": "NON ASSEGNATO", "note": ""                                                   }                                                                                                                                                                               ],
+  "1990": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1991": [ {"pos": 1, "name": "Casolini",      "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1992": [ {"pos": 1, "name": "Casolini",      "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1993": [ {"pos": 1, "name": "Mercato",       "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1994": [ {"pos": 1, "name": "NON ASSEGNATO", "note": ""                                                   }                                                                                                                                                                               ],
+  "1995": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1996": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1997": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1998": [ {"pos": 1, "name": "Castegnate",    "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "1999": [ {"pos": 1, "name": "Stazione",      "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2000": [ {"pos": 1, "name": "Bravi",         "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2001": [ {"pos": 1, "name": "NON ASSEGNATO", "note": ""                                                   }                                                                                                                                                                               ],
+  "2002": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2003": [ {"pos": 1, "name": "Mercato",       "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2004": [ {"pos": 1, "name": "Stazione",      "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2005": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2006": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2007": [ {"pos": 1, "name": "Vignali",       "note": "Noi Vogliam l'Oratorio (Renzo Arbore)"              }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2008": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2009": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2010": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2011": [ {"pos": 1, "name": "Stazione",      "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2012": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2013": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2014": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2015": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2016": [ {"pos": 1, "name": "Mercato",       "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2017": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2018": [ {"pos": 1, "name": "Bravi",         "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2019": [ {"pos": 1, "name": "Castegnate",    "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2020": [ {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"                                        }                                                                                                                                                                               ],
+  "2021": [ {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"                                        }                                                                                                                                                                               ],
+  "2022": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                                   }, {"pos": 2, "name": "---",           "note": ""                                 }, {"pos": 3, "name": "---",           "note": ""                                           } ],
+  "2023": [ {"pos": 1, "name": "Bravi",         "note": ""                                                   }, {"pos": 2, "name": "Carvisi",       "note": ""                                 }, {"pos": 3, "name": "Mercato",       "note": ""                                           } ],
+  "2024": [ {"pos": 1, "name": "Castegnate",    "note": ""                                                   }, {"pos": 2, "name": "Stazione",      "note": ""                                 }, {"pos": 3, "name": "Teren de Süra", "note": ""                                           } ],
+  "2025": [ {"pos": 1, "name": "Bravi",         "note": "Un palio in allegria (Balorda Nostalgia - Olly)"    }, {"pos": 2, "name": "Teren de Süra", "note": "Giallo e nero (Medley Gipsy King)"}, {"pos": 3, "name": "Mercato",       "note": "Il mercato c’è (Pretty fly - The Offspring)"} ],
+  "2026": [ {"pos": 1, "name": "Vignali",       "note": "Corrono gli Asini (Cammineremo ancora - Alex Garau)"}, {"pos": 2, "name": "Bravi",         "note": ""                                 }, {"pos": 3, "name": "Mercato",       "note": ""                                           } ]
+ },
+ "Canzoniere - Coreografia": {
+  "2008": [ {"pos": 1, "name": "Vignali",       "note": ""                                               }, {"pos": 2, "name": "",              "note": ""                       }, {"pos": 3, "name": "",                                 "note": ""                                 } ],
+  "2023": [ {"pos": 1, "name": "Castegnate",    "note": ""                                               }, {"pos": 2, "name": "",              "note": ""                       }, {"pos": 3, "name": "",                                 "note": ""                                 } ],
+  "2024": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                               }, {"pos": 2, "name": "Castegnate",    "note": ""                       }, {"pos": 3, "name": "Parimerito: Stazione e Strinciöl", "note": ""                                 } ],
+  "2025": [ {"pos": 1, "name": "Castegnate",    "note": "Questo è il palio (Country Roads - John Denver)"}, {"pos": 2, "name": "Stazione",      "note": "Tutti qui! (This is me)"}, {"pos": 3, "name": "Teren de Süra",                    "note": "Giallo e nero (Medley Gipsy King)"} ],
+  "2026": [ {"pos": 1, "name": "Mercato",       "note": ""                                               }, {"pos": 2, "name": "Teren de Süra", "note": ""                       }, {"pos": 3, "name": "Parimerito: Vignali e Castegnate", "note": ""                                 } ]
+ },
+ "Calcetto": {
+  "2015": [ {"pos": 1, "name": "",              "note": ""                                        }, {"pos": 2, "name": "",              "note": ""              }, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",        "note": ""} ],
+  "2016": [ {"pos": 1, "name": "",              "note": ""                                        }, {"pos": 2, "name": "",              "note": ""              }, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",        "note": ""} ],
+  "2017": [ {"pos": 1, "name": "",              "note": ""                                        }, {"pos": 2, "name": "",              "note": ""              }, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",        "note": ""} ],
+  "2018": [ {"pos": 1, "name": "",              "note": ""                                        }, {"pos": 2, "name": "",              "note": ""              }, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",        "note": ""} ],
+  "2019": [ {"pos": 1, "name": "",              "note": ""                                        }, {"pos": 2, "name": "",              "note": ""              }, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",        "note": ""} ],
+  "2020": [ {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"                             }                                                                                                                                                         ],
+  "2021": [ {"pos": 1, "name": "NON ASSEGNATO", "note": "Causa Covid"                             }                                                                                                                                                         ],
+  "2022": [ {"pos": 1, "name": "",              "note": ""                                        }, {"pos": 2, "name": "Teren de Süra", "note": ""              }, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",        "note": ""} ],
+  "2023": [ {"pos": 1, "name": "Teren de Süra", "note": ""                                        }, {"pos": 2, "name": "Strinciöl",     "note": ""              }, {"pos": 3, "name": "Carvisi",    "note": ""}, {"pos": 4, "name": "",        "note": ""} ],
+  "2024": [ {"pos": 1, "name": "Bravi",         "note": ""                                        }, {"pos": 2, "name": "",              "note": ""              }, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",        "note": ""} ],
+  "2025": [ {"pos": 1, "name": "Strinciöl",     "note": ""                                        }, {"pos": 2, "name": "Teren de Süra", "note": ""              }, {"pos": 3, "name": "Castegnate", "note": ""}, {"pos": 4, "name": "",        "note": ""} ],
+  "2026": [ {"pos": 1, "name": "Strinciöl",     "note": "Risultato: 5-4\nAllenatore: Angelo Verga"}, {"pos": 2, "name": "Teren de Süra", "note": "Risultato: 5-4"}, {"pos": 3, "name": "Bravi",      "note": ""}, {"pos": 4, "name": "Vignali", "note": ""} ]
+ },
+ "Pallavolo": {
+  "2015": [ {"pos": 1, "name": "",           "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2016": [ {"pos": 1, "name": "",           "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2017": [ {"pos": 1, "name": "",           "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2018": [ {"pos": 1, "name": "",           "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2019": [ {"pos": 1, "name": "",           "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2020": [ {"pos": 1, "name": "",           "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2021": [ {"pos": 1, "name": "",           "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2022": [ {"pos": 1, "name": "",           "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2023": [ {"pos": 1, "name": "Stazione",   "note": ""}, {"pos": 2, "name": "Carvisi",       "note": ""}, {"pos": 3, "name": "Castegnate", "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2024": [ {"pos": 1, "name": "Stazione",   "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",           "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2025": [ {"pos": 1, "name": "Castegnate", "note": ""}, {"pos": 2, "name": "Teren de Süra", "note": ""}, {"pos": 3, "name": "Stazione",   "note": ""}, {"pos": 4, "name": "",              "note": ""} ],
+  "2026": [ {"pos": 1, "name": "Carvisi",    "note": ""}, {"pos": 2, "name": "Castegnate",    "note": ""}, {"pos": 3, "name": "Bravi",      "note": ""}, {"pos": 4, "name": "Teren de Süra", "note": ""} ]
+ },
+ "Bocce": {
+  "2015": [ {"pos": 1, "name": "",              "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2016": [ {"pos": 1, "name": "",              "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2017": [ {"pos": 1, "name": "",              "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2018": [ {"pos": 1, "name": "",              "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2019": [ {"pos": 1, "name": "",              "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2020": [ {"pos": 1, "name": "",              "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2021": [ {"pos": 1, "name": "",              "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2022": [ {"pos": 1, "name": "",              "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2023": [ {"pos": 1, "name": "",              "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2024": [ {"pos": 1, "name": "Stazione",      "note": ""}, {"pos": 2, "name": "",              "note": ""}, {"pos": 3, "name": "",          "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2025": [ {"pos": 1, "name": "Teren de Süra", "note": ""}, {"pos": 2, "name": "Stazione",      "note": ""}, {"pos": 3, "name": "Strinciöl", "note": ""}, {"pos": 4, "name": "",      "note": ""} ],
+  "2026": [ {"pos": 1, "name": "Stazione",      "note": ""}, {"pos": 2, "name": "Teren de Süra", "note": ""}, {"pos": 3, "name": "Vignali",   "note": ""}, {"pos": 4, "name": "Bravi", "note": ""} ]
+ },
+ "Dodgeball": {
+  "2024": [ {"pos": 1, "name": "",         "note": ""}, {"pos": 2, "name": "",          "note": ""}, {"pos": 3, "name": "",              "note": ""}, {"pos": 4, "name": "", "note": ""} ],
+  "2025": [ {"pos": 1, "name": "",         "note": ""}, {"pos": 2, "name": "",          "note": ""}, {"pos": 3, "name": "",              "note": ""}, {"pos": 4, "name": "", "note": ""} ],
+  "2026": [ {"pos": 1, "name": "Casolini", "note": ""}, {"pos": 2, "name": "Strinciöl", "note": ""}, {"pos": 3, "name": "Teren de Süra", "note": ""}                                     ]
+ }
 }
