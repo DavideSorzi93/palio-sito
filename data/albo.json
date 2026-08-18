@@ -186,7 +186,7 @@
    {
     "pos": 1,
     "name": "Casolini",
-    "note": "Fantino: Maickol Panseri"
+    "note": "Fantino: Maickol Panseri\nAsino: Tartuca"
    }
   ],
   "2012": [
@@ -692,17 +692,17 @@
    {
     "pos": 1,
     "name": "Stazione",
-    "note": ""
+    "note": "Corri Corri!"
    },
    {
     "pos": 2,
-    "name": "---",
-    "note": ""
+    "name": "Teren de Süra",
+    "note": "Noi siamo pronti"
    },
    {
     "pos": 3,
-    "name": "---",
-    "note": ""
+    "name": "Vignali",
+    "note": "Baratto - Renato Zero"
    }
   ],
   "2012": [
@@ -1305,16 +1305,6 @@
     "pos": 1,
     "name": "Teren de Süra",
     "note": "Dopo 25 Anni (Grease Mega Mix)"
-   },
-   {
-    "pos": 2,
-    "name": "---",
-    "note": ""
-   },
-   {
-    "pos": 3,
-    "name": "",
-    "note": ""
    }
   ],
   "2010": [
@@ -1322,33 +1312,13 @@
     "pos": 1,
     "name": "Teren de Süra",
     "note": "Noi Insieme"
-   },
-   {
-    "pos": 2,
-    "name": "",
-    "note": ""
-   },
-   {
-    "pos": 3,
-    "name": "",
-    "note": ""
    }
   ],
   "2011": [
    {
     "pos": 1,
-    "name": "",
-    "note": ""
-   },
-   {
-    "pos": 2,
-    "name": "",
-    "note": ""
-   },
-   {
-    "pos": 3,
-    "name": "",
-    "note": ""
+    "name": "Teren de Süra",
+    "note": "Noi siamo pronti"
    }
   ],
   "2012": [
