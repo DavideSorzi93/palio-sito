@@ -200,14 +200,14 @@
    {
     "pos": 1,
     "name": "Teren de Süra",
-    "note": "Fantino: Gerry Donadoni"
+    "note": "Fantino: Gerry Donadoni\nAsino: Gigia"
    }
   ],
   "2014": [
    {
     "pos": 1,
     "name": "Teren de Süra",
-    "note": "Fantino: Gerry Donadoni"
+    "note": "Fantino: Gerry Donadoni\nAsino: Gigia"
    }
   ],
   "2015": [
@@ -726,7 +726,7 @@
    {
     "pos": 1,
     "name": "Strinciöl",
-    "note": ""
+    "note": "L'importante è costruire, un sogno da realizzare (Quello che le donne non dicono - Fiorella Mannoia)"
    },
    {
     "pos": 2,
@@ -743,7 +743,7 @@
    {
     "pos": 1,
     "name": "Strinciöl",
-    "note": ""
+    "note": "La Contrada"
    },
    {
     "pos": 2,
@@ -1358,7 +1358,7 @@
   "2014": [
    {
     "pos": 1,
-    "name": "",
+    "name": "Teren de Süra",
     "note": ""
    },
    {
@@ -1578,6 +1578,28 @@
   ]
  },
  "Calcetto": {
+  "2014": [
+   {
+    "pos": 1,
+    "name": "Strinciöl",
+    "note": ""
+   },
+   {
+    "pos": 2,
+    "name": "",
+    "note": ""
+   },
+   {
+    "pos": 3,
+    "name": "",
+    "note": ""
+   },
+   {
+    "pos": 4,
+    "name": "",
+    "note": ""
+   }
+  ],
   "2015": [
    {
     "pos": 1,
@@ -1814,6 +1836,28 @@
   ]
  },
  "Pallavolo": {
+  "2014": [
+   {
+    "pos": 1,
+    "name": "Stazione ",
+    "note": ""
+   },
+   {
+    "pos": 2,
+    "name": "Teren de Süra",
+    "note": ""
+   },
+   {
+    "pos": 3,
+    "name": "",
+    "note": ""
+   },
+   {
+    "pos": 4,
+    "name": "",
+    "note": ""
+   }
+  ],
   "2015": [
    {
     "pos": 1,
@@ -2080,6 +2124,28 @@
   ]
  },
  "Bocce": {
+  "2014": [
+   {
+    "pos": 1,
+    "name": "Teren de Süra",
+    "note": ""
+   },
+   {
+    "pos": 2,
+    "name": "",
+    "note": ""
+   },
+   {
+    "pos": 3,
+    "name": "",
+    "note": ""
+   },
+   {
+    "pos": 4,
+    "name": "",
+    "note": ""
+   }
+  ],
   "2015": [
    {
     "pos": 1,
